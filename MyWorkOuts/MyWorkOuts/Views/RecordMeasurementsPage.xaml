@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Measurements"
+             x:Class="MyWorkOuts.Views.RecordMeasurementsPage">
+    <ScrollView>
+        <StackLayout BackgroundColor="#B4B5B7">
+
+            <TableView Intent="Form" Margin="50">
+                <TableRoot>
+                    <TableSection Title="Measurement Tracker">
+                        <EntryCell x:Name="ChestEntry" Label="Chest: " Keyboard="Numeric" HorizontalTextAlignment="Center" />
+                        <EntryCell x:Name="LeftArm" Label="L.Arm: " Keyboard="Numeric" />
+                        <EntryCell x:Name="RightArm" Label="R.Arm: " Keyboard="Numeric" />
+                        <EntryCell x:Name="Waist" Label="Waist: " Keyboard="Numeric" />
+                        <EntryCell x:Name="Hip" Label="Hip:" Keyboard="Numeric" />
+                        <EntryCell x:Name="LeftThigh" Label="L.Thigh: " Keyboard="Numeric" />
+                        <EntryCell x:Name="RightThigh" Label="R.Thigh: " Keyboard="Numeric" />
+                        <EntryCell x:Name="CurrentWeigh" Label="Weight:" Keyboard="Numeric" />
+
+                    </TableSection>
+                    <TableSection>
+                        <ViewCell>
+                            <Button x:Name="Save"
+                                    Text="Save"
+                                    Clicked="Save_Clicked" />
+                        </ViewCell>
+                        <ViewCell>
+                            <Button x:Name="Exit"
+                                    Text="Cancel"
+                                    Clicked="Exit_Clicked" />
+                        </ViewCell>
+                    </TableSection>
+
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

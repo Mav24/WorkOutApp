@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyWorkOuts.Views.CurrentWorkOutPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Create Workout" Clicked="Create_WorkOut_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#B4B5B7">
+            <StackLayout HorizontalOptions="Fill" BackgroundColor="Blue">
+                <Label x:Name="Status" HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <!--<ListView x:Name="MyWorkOutList"
+                      SeparatorColor="#05161F"
+                      HasUnevenRows="True"
+                      ItemTapped="MyWorkOutList_ItemTapped"
+                      CachingStrategy="RecycleElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HasShadow="True" Margin="10,10,10,10">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                    <Grid Padding="10">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout HorizontalOptions="StartAndExpand">
+                                            <Label Grid.Row="0"
+                                               Grid.Column="0"
+                                               TextColor="#060C0D"
+                                               Text="{Binding WorkOutTitle}" />
+                                            <Label Grid.Row="1"
+                                               Grid.Column="0"
+                                               TextColor="#C3171C"
+                                               Text="{Binding Date, StringFormat='{}{0:MMMM dd, yyyy}'}" />
+                                        </StackLayout>
+                                        
+                                        <Image Grid.RowSpan="2"
+                                               Grid.Column="1"
+                                               HorizontalOptions="End"
+                                               Source="checkmark.png"
+                                               IsVisible="{Binding Done}" />
+                                    </Grid>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+
+
+
+            <ListView x:Name="MyWorkOutList"
+                      SeparatorColor="#05161F"
+                      HasUnevenRows="True"
+                      ItemTapped="MyWorkOutList_ItemTapped"
+                      CachingStrategy="RecycleElementAndDataTemplate">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HasShadow="True" Margin="10,10,10,10">
+                                <StackLayout Margin="0,0,0,0" Padding="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="StartAndExpand">
+                                        <Label TextColor="#060C0D"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           Text="{Binding WorkOutTitle}" />
+                                        <Label TextColor="#C3171C" 
+                                           FontSize="15"
+                                           Text="{Binding Date, StringFormat='{}{0:MMMM dd, yyyy}'}" />
+                                    </StackLayout>
+                                    <Image Source="checkmark.png" HorizontalOptions="End" IsVisible="{Binding Done}" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
