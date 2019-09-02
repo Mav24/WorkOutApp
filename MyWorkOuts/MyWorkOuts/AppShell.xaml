@@ -81,6 +81,10 @@
              Title="Asylum Vol 1">
             <ShellContent ContentTemplate="{DataTemplate local:AsylumVol1List}" />
         </Tab>
+        <Tab Route="AsylumVol2"
+             Title="Asylum Vol 2">
+            <ShellContent ContentTemplate="{DataTemplate local:AsylumVol2List}" />
+        </Tab>
     </FlyoutItem>
 
 </Shell>

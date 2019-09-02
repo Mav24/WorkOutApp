@@ -14,12 +14,12 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Frame HasShadow="True" Margin="10,10,10,10">
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                            <Frame HasShadow="True" Margin="15">
+                                <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                                     <Label TextColor="#060C0D"
                                            FontSize="15"
                                            FontAttributes="Bold"
-                                           Text="{Binding WorkOutTitle}" />
+                                           Text="{Binding .}" />
                                 </StackLayout>
                             </Frame>
                         </ViewCell>

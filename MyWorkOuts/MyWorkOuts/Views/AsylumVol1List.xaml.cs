@@ -17,8 +17,6 @@ namespace MyWorkOuts.Views
         public AsylumVol1List()
         {
             InitializeComponent();
-            List<string> workOutList = BeachBodyWorkOutList.AsylumVol1();
-
             MyAsylumVol1WorkOutList.ItemsSource = BeachBodyWorkOutList.AsylumVol1();
         }
     }

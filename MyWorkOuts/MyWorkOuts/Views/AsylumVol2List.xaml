@@ -6,10 +6,26 @@
              mc:Ignorable="d"
              x:Class="MyWorkOuts.Views.AsylumVol2List">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#B4B5B7">
+            <ListView x:Name="MyAsylumVol2WorkOutList"
+                      SeparatorColor="#05161F"
+                      HasUnevenRows="True"
+                      CachingStrategy="RecycleElementAndDataTemplate">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HasShadow="True" Margin="15">
+                                <StackLayout Padding="0" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                    <Label TextColor="#060C0D"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           Text="{Binding .}" />
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
