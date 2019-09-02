@@ -75,8 +75,12 @@
         </Tab>
     </FlyoutItem>
     <!--Third-->
-    <!--<FlyoutItem Title="About"
+    <FlyoutItem Title="WorkOut Programs"
                 FlyoutIcon="info.png">
-    </FlyoutItem>-->
+        <Tab Route="AsylumVol1"
+             Title="Asylum Vol 1">
+            <ShellContent ContentTemplate="{DataTemplate local:AsylumVol1List}" />
+        </Tab>
+    </FlyoutItem>
 
 </Shell>
