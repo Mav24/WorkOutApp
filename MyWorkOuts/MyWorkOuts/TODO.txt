@@ -1,7 +1,6 @@
 ﻿This is a list of things i want to do and are in the process of doing.
 
-- Create a program page that list all the avalible calendars. 
-(I can just port the list of string to the ListView, Need to style it)
+
 
 - Need to make title for current work out page. Also need to have a title for Program list.
 
