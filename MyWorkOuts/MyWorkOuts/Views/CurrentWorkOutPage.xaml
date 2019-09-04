@@ -11,8 +11,8 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout BackgroundColor="#B4B5B7">
-            <StackLayout HorizontalOptions="Fill" BackgroundColor="Blue">
-                <Label x:Name="Status" HorizontalOptions="Center"/>
+            <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
+                <Label x:Name="Status" Text="" TextColor="Black" HorizontalOptions="Center"/>
             </StackLayout>
 
             <!--<ListView x:Name="MyWorkOutList"

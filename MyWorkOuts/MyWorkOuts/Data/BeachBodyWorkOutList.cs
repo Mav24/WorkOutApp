@@ -158,5 +158,46 @@ namespace MyWorkOuts.Data
             };
             return workOutList;
         }
+
+        public static List<string> TenMinTrainer()
+        {
+            workOutList = new List<string>()
+            {
+                // Week One
+                "CARDIO\n+Lower Body\n+Abs",
+                "TOTAL BODY\n+ Cardio\n+Lower Body",
+                "Take the day off.",
+                "CARDIO\n+Abs\n+Yoga Flex",
+                "TOTAL BODY\n +Lower Body\n +Cardio",
+                "YOGA FLEX\n+Cardio\n+Abs",
+                "CARDIO\n+Yoga Flex\n+Total Body",
+                // Week Two
+                "CARDIO\n+Abs\n+Yoga Flex",
+                "YOGA FLEX\n+Lower Body\n+Total Body",
+                "Relax and enjoy the day.",
+                "CARDIO\n+Total Body\n+Abs",
+                "ABS\n+Yoga Flex\n+Cardio",
+                "CARDIO\n+Lower Body\n+Yoga Flex",
+                "LOWER BODY\n+Abs\n+Total Body",
+                // Week Three
+                "CARDIO\n+Lower Body\n+Abs",
+                "ABS\n+Cardio\n+Lower Body",
+                "Take it easy today.",
+                "LOWER BODY\n+Total Body\n+Cardio",
+                "CARDIO\n+Lower Body\n+Abs",
+                "YOGA FLEX\n+Total Body\n+Cardio",
+                "CARDIO\n+Abs\n+Lower Body",
+                // Week Four
+                "CARDIO\n+Lower Body\n+Abs",
+                "TOTAL BODY\n+Cardio\n+Lower Body",
+                "Enjoy your day off.",
+                "CARDIO\n+Abs\n+Yoga Flex",
+                "TOTAL BODY\n+Lower Body\n+Cardio",
+                "YOGA FLEX\n+Cardio\n+Abs",
+                "CARDIO\n+Yoga Flex\n+Total Body"
+
+            };
+            return workOutList;
+        }
     }
 }

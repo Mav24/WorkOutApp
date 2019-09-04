@@ -2,6 +2,6 @@
 
 
 
-- Need to make title for current work out page. Also need to have a title for Program list.
+- Need to make title for current work out page.
 
 -

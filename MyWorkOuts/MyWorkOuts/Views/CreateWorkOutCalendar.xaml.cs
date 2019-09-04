@@ -19,6 +19,7 @@ namespace MyWorkOuts.Views
     {
         private SQLiteAsyncConnection _connection;
         private ObservableCollection<WorkOutModel> _workOuts;
+        public string workOutTitle;
 
         List<string> workOutList;
         string selectedProgram;
@@ -53,6 +54,9 @@ namespace MyWorkOuts.Views
                 case "Asylum 1 + 2":
                     workOutList = BeachBodyWorkOutList.AsylumVol1and2();
                     break;
+                case "10 Minute Trainer":
+                    workOutList = BeachBodyWorkOutList.TenMinTrainer();
+                    break;
                 default:
                     break;
             }
@@ -63,11 +67,6 @@ namespace MyWorkOuts.Views
 
             await CreateNewCalendar();
             await Shell.Current.Navigation.PopModalAsync();
-            //if (await DisplayAlert("Warning!!", "Are you sure you want to create a new workout calendar? Current calendar will be deleted.", "Yes", "No"))
-            //{
-            //    await _connection.DropTableAsync<WorkOutModel>();
-            //    await CreateNewCalendar();
-            //}
 
         }
 
@@ -88,6 +87,7 @@ namespace MyWorkOuts.Views
                     };
                     await _connection.InsertAsync(itemsList);
                     _workOuts.Add(itemsList);
+                    workOutTitle = itemsList.Title;
                 }
 
                 await DisplayAlert("Calendar Created", $"{selectedProgram} WorkOut Calendar has been created.", "Great!");

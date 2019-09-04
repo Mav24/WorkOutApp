@@ -5,30 +5,41 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MyWorkOuts.Views.WorkOutPrograms"
-             Title="Current WorkOut Programs">
+             Title="WorkOut Programs">
     <ContentPage.Content>
-        <StackLayout Padding="20" HorizontalOptions="Fill" BackgroundColor="#B4B5B7">
-            <StackLayout VerticalOptions="Center">
-                <Frame HasShadow="True" Margin="10">
-                    <Label Text="Asylum Vol 1" 
+        <StackLayout Padding="10" HorizontalOptions="Fill" BackgroundColor="#B4B5B7">
+            <ScrollView>
+                <StackLayout VerticalOptions="Center" Padding="20">
+                    <Frame HasShadow="True" Padding="10" Margin="10" >
+                        <Label Text="Asylum Vol 1" 
                        TextColor="Black"
+                       FontSize="Large"    
                        VerticalOptions="Center"
                        HorizontalOptions="Center"/>
-                </Frame>
-                <Frame HasShadow="True" Margin="10">
-                    <Label Text="Asylum Vol 2"
-                   TextColor="Black"
-                VerticalOptions="Center" 
-                HorizontalOptions="CenterAndExpand" />
-                </Frame>
-                <Frame HasShadow="True" Margin="10">
-                    <Label Text="Asylum 1 + 2"
+                    </Frame>
+                    <Frame HasShadow="True" Padding="10" Margin="10">
+                        <Label Text="Asylum Vol 2"
                        TextColor="Black"
+                       FontSize="Large"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="CenterAndExpand" />
+                    </Frame>
+                    <Frame HasShadow="True" Padding="10" Margin="10">
+                        <Label Text="Asylum 1 + 2"
+                       TextColor="Black"
+                       FontSize="Large"
                        VerticalOptions="Center"
                        HorizontalOptions="CenterAndExpand" />
-                </Frame>
-            </StackLayout>
-            
+                    </Frame>
+                    <Frame HasShadow="True" Padding="10" Margin="10">
+                        <Label Text="10 Minute Trainer"
+                           TextColor="Black"
+                           FontSize="Large"
+                           VerticalOptions="Center"
+                           HorizontalOptions="CenterAndExpand" />
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

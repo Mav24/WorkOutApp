@@ -21,6 +21,7 @@
                                         <x:String>Asylum Vol 1</x:String>
                                         <x:String>Asylum Vol 2</x:String>
                                         <x:String>Asylum 1 + 2</x:String>
+                                        <x:String>10 Minute Trainer</x:String>
                                     </Picker.Items>
                                 </Picker>
                             </ViewCell>
