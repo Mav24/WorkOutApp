@@ -12,7 +12,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#B4B5B7">
             <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
-                <Label x:Name="Status" Text="" TextColor="Black" HorizontalOptions="Center"/>
+                <Label x:Name="WorkOutTitle" Text="" FontSize="Large" TextColor="Black" HorizontalOptions="Center"/>
             </StackLayout>
 
             <!--<ListView x:Name="MyWorkOutList"

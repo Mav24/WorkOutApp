@@ -30,7 +30,15 @@ namespace MyWorkOuts.Views
             var workOutsList = await _connection.Table<WorkOutModel>().ToListAsync();
             _workOuts = new ObservableCollection<WorkOutModel>(workOutsList.OrderBy(x => x.Date).ToList());
             MyWorkOutList.ItemsSource = _workOuts;
-
+            if (_workOuts.Count > 0)
+            {
+                WorkOutTitle.Text = _workOuts[0].Title.ToString();
+            }
+            else
+            {
+                WorkOutTitle.Text = "Click the create workout button to start a workout program!";
+            }
+            
             // Needs work need to get current days work out and count of how many days left
             //var daysLeft = _workOuts.Count;
             //Status.Text = $"Current WorkOut Days Left: {daysLeft.ToString()}";

@@ -5,13 +5,197 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="Measurements"
-             x:Class="MyWorkOuts.Views.RecordMeasurementsPage">
+             x:Class="MyWorkOuts.Views.RecordMeasurementsPage"
+             Visual="Material">
     <ScrollView>
-        <StackLayout BackgroundColor="#B4B5B7">
+        <StackLayout Padding="40,20">
+            <Label Text="Record your Measurements" FontSize="Large" HorizontalOptions="Center" Margin="10,10" TextColor="Black"/>
+            <StackLayout>
+                <Entry x:Name="ChestEntry"
+                   Placeholder="Chest"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
+            <StackLayout>
+                <Entry x:Name="LeftArm"
+                   Placeholder="Left Arm"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
 
-            <TableView Intent="Form" Margin="50">
+            <StackLayout>
+                <Entry x:Name="RightArm"
+                   Placeholder="Right Arm"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
+
+            <StackLayout>
+                <Entry x:Name="Waist"
+                   Placeholder="Waist"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
+
+            <StackLayout>
+                <Entry x:Name="Hip"
+                   Placeholder="Hip"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
+
+            <StackLayout>
+                <Entry x:Name="LeftThigh"
+                   Placeholder="Left Thigh"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
+
+            <StackLayout>
+                <Entry x:Name="RightThigh"
+                   Placeholder="Right Thigh"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
+
+            <StackLayout>
+                <Entry x:Name="CurrentWeigh"
+                       Placeholder="Weight"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+            </StackLayout>
+            <StackLayout Padding="5">
+                <Button x:Name="Save"
+                        Text="Save"
+                        Clicked="Save_Clicked" />
+                <Button x:Name="Exit"
+                        Text="Cancel"
+                        Clicked="Exit_Clicked" />
+                
+            </StackLayout>
+        </StackLayout>
+        <!--<StackLayout Spacing="20" Padding="10">
+            
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40"/>
+                    <Entry x:Name="ChestEntry"
+                           HorizontalOptions="StartAndExpand"
+                           WidthRequest="100"
+                           MaxLength="3"
+                   Keyboard="Numeric"
+                   Placeholder="Chest" />
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40" />
+                    <Entry x:Name="CurrentWeigh"
+                           HorizontalOptions="EndAndExpand"
+                           WidthRequest="150"
+                           MaxLength="3"
+                           Keyboard="Numeric"
+                           Placeholder="Current Weigh" />
+                </StackLayout>
+
+            
+            
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40"/>
+                    <Entry x:Name="LeftArm"
+                       HorizontalOptions="Start"
+                       WidthRequest="100"
+                       MaxLength="3"
+                       Keyboard="Numeric"
+                       Placeholder="Left Arm" />
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40" />
+                    <Entry x:Name="RightArm"
+                           WidthRequest="110"
+                           MaxLength="3"
+                           Keyboard="Numeric" 
+                           Placeholder="Right Arm"/>
+                </StackLayout>
+           
+
+            
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40"/>
+                    <Entry x:Name="Waist"
+                           WidthRequest="100"
+                           MaxLength="3"
+                           Keyboard="Numeric"
+                           Placeholder="Waist" />
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40"/>
+                    <Entry x:Name="Hip"
+                           WidthRequest="75"
+                           MaxLength="3"
+                           Keyboard="Numeric"
+                           Placeholder="Hip" />
+                </StackLayout>
+            
+
+            
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40"/>
+                    <Entry x:Name="LeftThigh"
+                           WidthRequest="120"
+                           MaxLength="3"
+                           Keyboard="Numeric"
+                           Placeholder="Left Thigh" />
+                    <Image Source="info.png" HeightRequest="40" WidthRequest="40"/>
+                    <Entry x:Name="RightThigh"
+                           WidthRequest="140"
+                           MaxLength="3"
+                           Keyboard="Numeric"
+                           Placeholder="Right Thigh" />
+                </StackLayout>
+           
+            <StackLayout>
+                <Button x:Name="Save"
+                        Text="Save"
+                        Clicked="Save_Clicked" />
+                <Button x:Name="Cancel"
+                        Text="Cancel"
+                        Clicked="Exit_Clicked" />
+            </StackLayout>
+
+        </StackLayout>-->
+        
+        <!--<StackLayout BackgroundColor="#B4B5B7">
+
+            <TableView Intent="Form" Margin="10,10,10,10">
                 <TableRoot>
                     <TableSection Title="Measurement Tracker">
+                        
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="info.png" />
+                                <Entry HorizontalOptions="FillAndExpand" 
+                                       HorizontalTextAlignment="Center" 
+                                       Keyboard="Numeric"
+                                       Placeholder="Chest" />
+
+                            </StackLayout>
+                        </ViewCell>
+
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="info.png" />
+                                <Entry HorizontalOptions="FillAndExpand"
+                                       HorizontalTextAlignment="Center" 
+                                       Keyboard="Numeric" 
+                                       Placeholder="Left Arm"/>
+
+                            </StackLayout>
+                        </ViewCell>
+                        
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="info.png" />
+                                <Entry HorizontalOptions="FillAndExpand"
+                                       HorizontalTextAlignment="Center"
+                                       Keyboard="Numberic"
+                                       Placeholder="Right Arm" />
+                            </StackLayout>
+
+                            
+                        </ViewCell>
+                        
                         <EntryCell x:Name="ChestEntry" Label="Chest: " Keyboard="Numeric" HorizontalTextAlignment="Center" />
                         <EntryCell x:Name="LeftArm" Label="L.Arm: " Keyboard="Numeric" />
                         <EntryCell x:Name="RightArm" Label="R.Arm: " Keyboard="Numeric" />
@@ -22,6 +206,7 @@
                         <EntryCell x:Name="CurrentWeigh" Label="Weight:" Keyboard="Numeric" />
 
                     </TableSection>
+                    
                     <TableSection>
                         <ViewCell>
                             <Button x:Name="Save"
@@ -37,6 +222,6 @@
 
                 </TableRoot>
             </TableView>
-        </StackLayout>
+        </StackLayout>-->
     </ScrollView>
 </ContentPage>

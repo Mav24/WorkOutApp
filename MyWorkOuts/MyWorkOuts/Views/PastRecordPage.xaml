@@ -29,15 +29,15 @@
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
-                                        <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="2" Text="{Binding CurrentDate, StringFormat='Recorded On: {0:MMMM dd, yyyy}'}" />
+                                        <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding CurrentDate, StringFormat='Recorded On: {0:MMMM dd, yyyy}'}" />
                                         <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.Column="3" Text="{Binding CurrentWeigh, StringFormat='Weight: {0}'}" />
                                         <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="0" Text="{Binding Chest, StringFormat='Chest: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="1" Text="{Binding LeftArm, StringFormat='L.Arm: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="2" Text="{Binding RightArm, StringFormat='R.Arm: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="0" Text="{Binding Waist, StringFormat='Waist: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="1" Text="{Binding Hip, StringFormat='Hip: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="0" Text="{Binding LeftThigh, StringFormat='L.Thigh: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="1" Text="{Binding RightThigh, StringFormat='R.Thigh: {0}'}" />
+                                        <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="1" Text="{Binding Waist, StringFormat='Waist: {0}'}" />
+                                        <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="2" Text="{Binding Hip, StringFormat='Hip: {0}'}" />
+                                        <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="0" Text="{Binding LeftArm, StringFormat='Left Arm: {0}'}" />
+                                        <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="1" Text="{Binding RightArm, StringFormat='Right Arm: {0}'}" />
+                                        <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="0" Text="{Binding LeftThigh, StringFormat='Left Thigh: {0}'}" />
+                                        <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="1" Text="{Binding RightThigh, StringFormat='Right Thigh: {0}'}" />
                                     </Grid>
                                 </StackLayout>
                             </Frame>
