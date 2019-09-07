@@ -11,6 +11,13 @@
             <ScrollView>
                 <StackLayout VerticalOptions="Center" Padding="20">
                     <Frame HasShadow="True" Padding="10" Margin="10" >
+                        <Label Text="Insanity" 
+                       TextColor="Black"
+                       FontSize="Large"    
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
+                    </Frame>
+                    <Frame HasShadow="True" Padding="10" Margin="10" >
                         <Label Text="Asylum Vol 1" 
                        TextColor="Black"
                        FontSize="Large"    
@@ -37,6 +44,13 @@
                            FontSize="Large"
                            VerticalOptions="Center"
                            HorizontalOptions="CenterAndExpand" />
+                    </Frame>
+                    <Frame HasShadow="True" Padding="10" Margin="10" >
+                        <Label Text="Max 30" 
+                       TextColor="Black"
+                       FontSize="Large"    
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"/>
                     </Frame>
                 </StackLayout>
             </ScrollView>

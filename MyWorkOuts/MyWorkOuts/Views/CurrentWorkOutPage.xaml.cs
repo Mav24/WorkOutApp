@@ -17,6 +17,7 @@ namespace MyWorkOuts.Views
     {
         private SQLiteAsyncConnection _connection;
         private ObservableCollection<WorkOutModel> _workOuts;
+        
         public CurrentWorkOutPage()
         {
             InitializeComponent();
@@ -29,14 +30,20 @@ namespace MyWorkOuts.Views
             await _connection.CreateTableAsync<WorkOutModel>();
             var workOutsList = await _connection.Table<WorkOutModel>().ToListAsync();
             _workOuts = new ObservableCollection<WorkOutModel>(workOutsList.OrderBy(x => x.Date).ToList());
+            var workOutCount = _workOuts.Count;
+            var completed = _workOuts.Count(x => x.Done);
+            var workOutDaysLeft = workOutCount - completed;
             MyWorkOutList.ItemsSource = _workOuts;
-            if (_workOuts.Count > 0)
+
+            if (workOutCount > 0)
             {
                 WorkOutTitle.Text = _workOuts[0].Title.ToString();
+                WorkoutDays.Text = $"\n{workOutDaysLeft} Days left";
             }
             else
             {
                 WorkOutTitle.Text = "Click the create workout button to start a workout program!";
+                WorkoutDays.Text = "";
             }
             
             // Needs work need to get current days work out and count of how many days left

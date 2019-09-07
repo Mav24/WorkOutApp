@@ -199,5 +199,161 @@ namespace MyWorkOuts.Data
             };
             return workOutList;
         }
+
+        public static List<string> Insanity()
+        {
+            workOutList = new List<string>()
+            {
+                // Week one
+                "Fit Test",
+                "Plyometric\nCardio Circuit",
+                "Cardio Power\n& Resistance",
+                "Cardio Recovery",
+                "Pure Cardio",
+                "Plyometric\nCardio Circuit",
+                "Rest",
+                // Week Two
+                "Cardio Power\n& Resistance",
+                "Pure Cardio",
+                "Plyometric\nCardio Circuit",
+                "Cardio Recovery",
+                "Cardio Power\n& Resistance",
+                "Pure Cardio\n& Cardio Abs",
+                "Rest",
+                // Week Three
+                "Fit Test",
+                "Plyometric\nCardio Circuit",
+                "Pure Cardio\n& Cardio Abs",
+                "Cardio Recovery",
+                "Cardio Power\n& Resistance",
+                "Plyometric\nCardio Circuit",
+                "Rest",
+                // Week four
+                "Pure Cardio\n& Cardio Abs",
+                "Cardio Power\n& Resistance",
+                "Plyometric\nCardio Circuit",
+                "Cardio Recovery",
+                "Pure Cardio\n& Cardio Abs",
+                "Plyometric\nCardio Circuit",
+                "Rest",
+                // Week five
+                "Core Cardio\n& Balance",
+                "Core Cardio\n& Balance",
+                "Core Cardio\n& Balance",
+                "Core Cardio\n& Balance",
+                "Core Cardio\n& Balance",
+                "Core Cardio\n& Balance",
+                "Rest",
+                // Week six
+                "Fit Test\n& Max Interval Circuit",
+                "Max Interval Plyo",
+                "Max Cardio\nConditioning",
+                "Max Recovery",
+                "Max Interval Circuit",
+                "Max Interval Plyo",
+                "Rest",
+                // Week seven
+                "Max Cardio\nConditioning",
+                "Max Interval Circuit",
+                "Max Interval Plyo",
+                "Max Recovery",
+                "Max Cardio Conditioning\n& Cardio Abs",
+                "Core Cardio\n&Balance*",
+                "Rest",
+                // Week eight
+                "Fit Test\n& Max Interval Circuit",
+                "Max Interval Plyo",
+                "Max Cardio Conditioning\n& Cardio Abs",
+                "Max Recovery",
+                "Max Interval Circuit",
+                "Core Cardio\n& Balance*",
+                "Rest",
+                // Week nine
+                "Max Interval Plyo",
+                "Max Cardio Conditioning\n& Cardio Abs",
+                "Max Interval Circuit",
+                "Core Cardio\n& Balance*",
+                "Max Interval Plyo",
+                "Max Cardio Conditioning\n& Cardio Abs",
+                "Fit Test"
+            };
+            return workOutList;
+        }
+
+        public static List<string> Max30()
+        {
+            workOutList = new List<string>()
+            {
+                // Week one
+                "Cardio Challenge",
+                "Tabata Power",
+                "Sweat Intervals*",
+                "Tabata Power",
+                "Fight: Round 1",
+                "Rest\nPulse(optional)",
+                "Rest",
+                // Week two
+                "Cardio Challenge",
+                "Tabata Power",
+                "Sweat Intervals*",
+                "Tabata Power",
+                "Fight: Round 1",
+                "Rest\nPulse(optional)",
+                "Rest",
+                // Week three
+                "Cardio Challenge",
+                "Tabata Strength",
+                "Sweat Intervals*",
+                "Tabata Strength",
+                "Fight: Round 1",
+                "Rest\nPulse(optional)",
+                "Rest",
+                // Week four
+                "Cardio Challenge",
+                "Tabata Strength",
+                "Sweat Intervals*",
+                "Tabata Strength",
+                "Fight: Round 1",
+                "Rest\nPulse(optional)",
+                "Rest",
+                // Month two
+                // Week One
+                "Max Out Cardio",
+                "Max Out Power",
+                "Max Out Sweat",
+                "Max Out Strength",
+                "Fight: Round 2",
+                "Rest\nPulse(Optional)",
+                "Rest",
+                // Month two
+                // Week two
+                "Max Out Cardio",
+                "Max Out Power",
+                "Max Out Sweat",
+                "Max Out Strength",
+                "Fight: Round 2",
+                "Rest\nPulse(Optional)",
+                "Rest",
+                // Month two
+                // Week three
+                "Max Out Cardio",
+                "Max Out Power",
+                "Max Out Sweat",
+                "Max Out Strength",
+                "Fight: Round 2",
+                "Rest\nPulse(Optional)",
+                "Rest",
+                // Month two
+                // Week four
+                "Max Out Cardio",
+                "Max Out Power",
+                "Max Out Sweat",
+                "Max Out Strength",
+                "Fight: Round 2",
+                "Rest\nPulse(Optional)",
+                "Rest",
+            };
+            return workOutList;
+        }
     }
 }

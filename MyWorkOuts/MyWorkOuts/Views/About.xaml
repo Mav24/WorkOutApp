@@ -6,10 +6,18 @@
              mc:Ignorable="d"
              x:Class="MyWorkOuts.Views.About">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Work in progress"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
+                <Label Text="My WorkOut App" HorizontalOptions="Center" FontSize="Large"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="icon.png" />
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Work in progress" HorizontalOptions="Center" FontSize="Medium"/>
+            </StackLayout>
+            <Label Text="Created by Maverick www.sfosquad.com" HorizontalOptions="Center" />
         </StackLayout>
+            
     </ContentPage.Content>
 </ContentPage>

@@ -1,3 +1,6 @@
 ﻿This is a list of things i want to do and are in the process of doing.
 
+- Sept 6th 2019 
+Need to work on About page.. 
+I like to make it so if you click create new workout and you cancel it the workout program you had will be put back..
 

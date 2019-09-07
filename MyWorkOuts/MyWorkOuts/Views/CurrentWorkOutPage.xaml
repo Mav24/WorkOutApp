@@ -12,7 +12,8 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#B4B5B7">
             <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
-                <Label x:Name="WorkOutTitle" Text="" FontSize="Large" TextColor="Black" HorizontalOptions="Center"/>
+                <Label x:Name="WorkOutTitle" FontSize="Large" TextColor="Black" HorizontalOptions="Center" Margin="0,0,0,-25"/>
+                <Label x:Name="WorkoutDays" FontSize="Medium" TextColor="Black" HorizontalOptions="Center" />
             </StackLayout>
 
             <!--<ListView x:Name="MyWorkOutList"

@@ -4,77 +4,82 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Measurements"
              x:Class="MyWorkOuts.Views.RecordMeasurementsPage"
              Visual="Material">
+
     <ScrollView>
-        <StackLayout Padding="40,20">
-            <Label Text="Record your Measurements" FontSize="Large" HorizontalOptions="Center" Margin="10,10" TextColor="Black"/>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
+                <Label Text="Record your Measurements" FontSize="Medium" HorizontalOptions="Center" Margin="10,10" TextColor="Black"/>
+            </StackLayout>
             <StackLayout>
-                <Entry x:Name="ChestEntry"
+                <Image Source="measuringTape64.png" />
+            </StackLayout>
+            <StackLayout Padding="40,20">
+                <StackLayout>
+                    <Entry x:Name="ChestEntry"
                    Placeholder="Chest"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
-            <StackLayout>
-                <Entry x:Name="LeftArm"
+                </StackLayout>
+                <StackLayout>
+                    <Entry x:Name="LeftArm"
                        HorizontalOptions="FillAndExpand"
                        Placeholder="Left Arm"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout>
-                <Entry x:Name="RightArm"
+                <StackLayout>
+                    <Entry x:Name="RightArm"
                        HorizontalOptions="FillAndExpand"
                        Placeholder="Right Arm"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout>
-                <Entry x:Name="Waist"
+                <StackLayout>
+                    <Entry x:Name="Waist"
                    Placeholder="Waist"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout>
-                <Entry x:Name="Hip"
+                <StackLayout>
+                    <Entry x:Name="Hip"
                    Placeholder="Hip"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout>
-                <Entry x:Name="LeftThigh"
+                <StackLayout>
+                    <Entry x:Name="LeftThigh"
                    Placeholder="Left Thigh"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout>
-                <Entry x:Name="RightThigh"
+                <StackLayout>
+                    <Entry x:Name="RightThigh"
                    Placeholder="Right Thigh"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout>
-                <Entry x:Name="CurrentWeigh"
+                <StackLayout>
+                    <Entry x:Name="CurrentWeigh"
                        Placeholder="Weight"
                        Keyboard="Numeric"
                        MaxLength="3" />
-            </StackLayout>
-            <StackLayout Padding="5">
-                <Button x:Name="Save"
+                </StackLayout>
+                <StackLayout Padding="5">
+                    <Button x:Name="Save"
                         Text="Save"
                         Clicked="Save_Clicked" />
-                <Button x:Name="Exit"
-                        Text="Cancel"
-                        Clicked="Exit_Clicked" />
-                
+
+                </StackLayout>
             </StackLayout>
+            
         </StackLayout>
         <!--<StackLayout Spacing="20" Padding="10">
             

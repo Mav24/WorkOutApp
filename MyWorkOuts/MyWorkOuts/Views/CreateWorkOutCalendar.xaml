@@ -5,10 +5,44 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MyWorkOuts.Views.CreateWorkOutCalendar"
-             Title="Create a new WorkOut Calendar">
+             Visual="Material">
 
-
-        <StackLayout BackgroundColor="#B4B5B7">
+    <StackLayout>
+        <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
+            <Label Text="Select A WorkOut Program" TextColor="Black" HorizontalOptions="Center" />
+        </StackLayout>
+        <StackLayout HorizontalOptions="Center">
+            <Image Source="icon.png" />
+        </StackLayout>
+        <StackLayout Margin="20">
+            <Label Text="Select a Program!" TextColor="Black"/>
+            <Picker x:Name="Program" Title="Select Program!"
+                    VerticalOptions="CenterAndExpand"
+                    SelectedIndexChanged="Program_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>Asylum Vol 1</x:String>
+                    <x:String>Asylum Vol 2</x:String>
+                    <x:String>Asylum 1 + 2</x:String>
+                    <x:String>Insanity</x:String>
+                    <x:String>Max 30</x:String>
+                    <x:String>10 Minute Trainer</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+        <StackLayout Margin="20">
+            <DatePicker x:Name="startDate" Format="D" TextColor="Black"
+                        VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <StackLayout Margin="10">
+            <Button x:Name="Save" Text="Save"
+                    Clicked="Save_Clicked" 
+                    Opacity="10" />
+            <Button x:Name="Cancel" Text="Cancel"
+                    Clicked="Cancel_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+    
+    <!--<StackLayout BackgroundColor="#B4B5B7">
         <Frame HasShadow="True" Margin="40">
             <TableView Intent="Menu">
                 <TableRoot>
@@ -21,6 +55,8 @@
                                     <x:String>Asylum Vol 1</x:String>
                                     <x:String>Asylum Vol 2</x:String>
                                     <x:String>Asylum 1 + 2</x:String>
+                                    <x:String>Insanity</x:String>
+                                    <x:String>Max 30</x:String>
                                     <x:String>10 Minute Trainer</x:String>
                                 </Picker.Items>
                             </Picker>
@@ -43,7 +79,7 @@
         </Frame>
 
 
-    </StackLayout>
+    </StackLayout>-->
     
        
     

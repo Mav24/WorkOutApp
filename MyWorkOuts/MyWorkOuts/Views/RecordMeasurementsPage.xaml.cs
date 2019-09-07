@@ -82,10 +82,5 @@ namespace MyWorkOuts.Views
                 await DisplayAlert("Error!", "Something went wrong!", "Ok");
             }
         }
-
-        private void Exit_Clicked(object sender, EventArgs e)
-        {
-
-        }
     }
 }
