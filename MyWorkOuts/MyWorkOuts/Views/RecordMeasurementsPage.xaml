@@ -18,14 +18,16 @@
             </StackLayout>
             <StackLayout>
                 <Entry x:Name="LeftArm"
-                   Placeholder="Left Arm"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="Left Arm"
                        Keyboard="Numeric"
                        MaxLength="3" />
             </StackLayout>
 
             <StackLayout>
                 <Entry x:Name="RightArm"
-                   Placeholder="Right Arm"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="Right Arm"
                        Keyboard="Numeric"
                        MaxLength="3" />
             </StackLayout>
