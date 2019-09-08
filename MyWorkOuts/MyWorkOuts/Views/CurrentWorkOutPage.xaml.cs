@@ -46,16 +46,11 @@ namespace MyWorkOuts.Views
                 WorkoutDays.Text = "";
             }
             
-            // Needs work need to get current days work out and count of how many days left
-            //var daysLeft = _workOuts.Count;
-            //Status.Text = $"Current WorkOut Days Left: {daysLeft.ToString()}";
-            
         }
         async void Create_WorkOut_Clicked(object sender, EventArgs e)
         {
             if (await DisplayAlert("Warning!!", "Are you sure you want to create a new workout calendar? Current calendar will be deleted.", "Yes", "No"))
             {
-
                 await _connection.DropTableAsync<WorkOutModel>();
                 await Shell.Current.Navigation.PushModalAsync(new CreateWorkOutCalendar());
             }

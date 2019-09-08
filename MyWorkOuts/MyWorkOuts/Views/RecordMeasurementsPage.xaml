@@ -12,8 +12,8 @@
             <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
                 <Label Text="Record your Measurements" FontSize="Medium" HorizontalOptions="Center" Margin="10,10" TextColor="Black"/>
             </StackLayout>
-            <StackLayout>
-                <Image Source="measuringTape64.png" />
+            <StackLayout HorizontalOptions="Center">
+                <Image Source="MeasuringTape64.png" />
             </StackLayout>
             <StackLayout Padding="40,20">
                 <StackLayout>

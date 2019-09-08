@@ -16,5 +16,15 @@ namespace MyWorkOuts.Views
         {
             InitializeComponent();
         }
+
+        private void GoSFO_Tapped(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("http://www.sfosquad.com"));
+        }
+
+        private void dinosoftlabs_Tapped(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://www.flaticon.com/authors/dinosoftlabs"));
+        }
     }
 }

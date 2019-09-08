@@ -4,12 +4,16 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MyWorkOuts.Views.WorkOutPrograms"
-             Title="WorkOut Programs">
+             x:Class="MyWorkOuts.Views.WorkOutPrograms">
+    
     <ContentPage.Content>
-        <StackLayout Padding="10" HorizontalOptions="Fill" BackgroundColor="#B4B5B7">
+        <StackLayout HorizontalOptions="Fill" BackgroundColor="#B4B5B7">
             <ScrollView>
-                <StackLayout VerticalOptions="Center" Padding="20">
+                <StackLayout>
+                    <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
+                        <Label Text="Workout Programs" FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="Center" Padding="20">
                     <Frame HasShadow="True" Padding="10" Margin="10" >
                         <Label Text="Insanity" 
                        TextColor="Black"
@@ -52,6 +56,7 @@
                        VerticalOptions="Center"
                        HorizontalOptions="Center"/>
                     </Frame>
+                </StackLayout>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

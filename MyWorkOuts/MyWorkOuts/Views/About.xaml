@@ -8,15 +8,27 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand">
             <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
-                <Label Text="My WorkOut App" HorizontalOptions="Center" FontSize="Large"/>
+                <Label Text="My WorkOut App" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
             </StackLayout>
             <StackLayout HorizontalOptions="Center">
                 <Image Source="icon.png" />
             </StackLayout>
             <StackLayout>
-                <Label Text="Work in progress" HorizontalOptions="Center" FontSize="Medium"/>
+                <Label Text="Created by Maverick " HorizontalOptions="Center" FontSize="Large"/>
+                <Label Text="www.sfosquad.com" HorizontalOptions="Center" TextDecorations="Underline">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="GoSFO_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
             </StackLayout>
-            <Label Text="Created by Maverick www.sfosquad.com" HorizontalOptions="Center" />
+            
+            <StackLayout VerticalOptions="EndAndExpand" Margin="10">
+                <Label Text="Icons provided by DinosoftLabs" HorizontalOptions="Center" FontSize="Medium">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="dinosoftlabs_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </StackLayout>
         </StackLayout>
             
     </ContentPage.Content>
