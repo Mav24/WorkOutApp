@@ -11,7 +11,7 @@
                 <Label Text="My WorkOut App" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
             </StackLayout>
             <StackLayout HorizontalOptions="Center">
-                <Image Source="icon.png" />
+                <Image Source="icon.png"/>
             </StackLayout>
             <StackLayout>
                 <Label Text="Created by Maverick " HorizontalOptions="Center" FontSize="Large"/>

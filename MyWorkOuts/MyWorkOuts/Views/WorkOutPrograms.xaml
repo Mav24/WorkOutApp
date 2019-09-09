@@ -7,8 +7,38 @@
              x:Class="MyWorkOuts.Views.WorkOutPrograms">
     
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Fill" BackgroundColor="#B4B5B7">
-            <ScrollView>
+        <StackLayout BackgroundColor="#B4B5B7">
+            <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
+                <Label Text="Workout Programs" FontSize="Large" HorizontalOptions="Center" TextColor="Black" />
+            </StackLayout>
+            <ListView x:Name="MyProgramsList"
+                      SeparatorColor="#05161F"
+                      HasUnevenRows="True"
+                      ItemTapped="WorkoutProgramsList_ItemTapped"
+                      CachingStrategy="RecycleElementAndDataTemplate">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HasShadow="True" Margin="10">
+                                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                                    <Image Source="{Binding ImageUrl}" WidthRequest="75" Aspect="AspectFit" />
+                                    <StackLayout HorizontalOptions="StartAndExpand" Margin="20,0,0,0">
+                                        <Label TextColor="#060C0D"
+                                           FontSize="Large"
+                                           Text="{Binding ProgramTitle}" />
+                                        <Label TextColor="#C3171C"
+                                           FontSize="Medium"
+                                           Text="{Binding DaysToWorkOut}" />
+                                    </StackLayout>
+                                    
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <!--<ScrollView>
                 <StackLayout>
                     <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
                         <Label Text="Workout Programs" FontSize="Large" HorizontalOptions="Center" TextColor="Black"/>
@@ -58,7 +88,7 @@
                     </Frame>
                 </StackLayout>
                 </StackLayout>
-            </ScrollView>
+            </ScrollView>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
