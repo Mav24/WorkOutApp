@@ -18,16 +18,16 @@
                                 <StackLayout>
                                     <Grid VerticalOptions="FillAndExpand">
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="*" />
-                                            <RowDefinition Height="*" />
-                                            <RowDefinition Height="*" />
-                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
                                         <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
-                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
                                         </Grid.ColumnDefinitions>
                                         <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding CurrentDate, StringFormat='Recorded On: {0:MMMM dd, yyyy}'}" />
                                         <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.Column="3" Text="{Binding CurrentWeigh, StringFormat='Weight: {0}'}" />

@@ -13,7 +13,7 @@
                 <Label Text="Record your Measurements" FontSize="Medium" HorizontalOptions="Center" Margin="10,10" TextColor="Black"/>
             </StackLayout>
             <StackLayout HorizontalOptions="Center">
-                <Image Source="MeasuringTape64.png" />
+                <Image Source="measurements96.png" />
             </StackLayout>
             <StackLayout Padding="40,20">
                 <StackLayout>

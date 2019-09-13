@@ -4,3 +4,9 @@
 Need to work on About page.. 
 I like to make it so if you click create new workout and you cancel it the workout program you had will be put back..
 
+Sept 11 2019
+- Working on my own images.. 
+
+Sept 12 2019
+- Created new images, Still need new image for main Icon.
+

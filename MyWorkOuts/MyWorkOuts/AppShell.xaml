@@ -26,7 +26,7 @@
         
     </Shell.FlyoutHeader>
     <!--First-->
-    <FlyoutItem FlyoutIcon="Checklist64.png"
+    <FlyoutItem FlyoutIcon="clipboard1.png"
                 Title="Current Program">
         <Tab Route="CurrentWorkOut"
              Title="Current WorkOut">
@@ -35,7 +35,7 @@
     </FlyoutItem>
     <!--Second-->
     <FlyoutItem Title="Measurements"
-                FlyoutIcon="MeasuringTape64.png">
+                FlyoutIcon="measurements96.png">
         <Tab Route="Record"
              Title="Add Record"
              Icon="clipboard.png">
@@ -50,7 +50,7 @@
     </FlyoutItem>
     <!--Third-->
     <FlyoutItem Title="WorkOut Programs"
-                FlyoutIcon="Calendar64.png">
+                FlyoutIcon="workoutprograms.png">
         <Tab Route="Programs"
              Title="Asylum Vol 1">
             <ShellContent ContentTemplate="{DataTemplate local:WorkOutPrograms}" />
