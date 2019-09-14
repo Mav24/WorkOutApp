@@ -22,7 +22,6 @@ namespace MyWorkOuts.Views
             InitializeComponent();
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
         }
-
         protected override async void OnAppearing()
         {
             await _connection.CreateTableAsync<Measurements>();

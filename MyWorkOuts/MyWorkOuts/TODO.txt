@@ -9,4 +9,5 @@ Sept 11 2019
 
 Sept 12 2019
 - Created new images, Still need new image for main Icon.
+- Look in to new style for past records page
 

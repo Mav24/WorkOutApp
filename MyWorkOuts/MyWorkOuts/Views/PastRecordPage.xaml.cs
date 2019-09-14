@@ -23,7 +23,6 @@ namespace MyWorkOuts.Views
             InitializeComponent();
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
         }
-
         protected override async void OnAppearing()
         {
             await _connection.CreateTableAsync<Measurements>();
@@ -40,6 +39,12 @@ namespace MyWorkOuts.Views
                 await _connection.DeleteAsync(delRecord);
                 _measurements.Remove(delRecord);
             }
+        }
+
+        private void MeasurementsList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            MeasurementsList.SelectedItem = null;
+
         }
     }
 }

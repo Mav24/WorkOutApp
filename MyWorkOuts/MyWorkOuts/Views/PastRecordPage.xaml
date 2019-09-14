@@ -7,52 +7,77 @@
              x:Class="MyWorkOuts.Views.PastRecordPage">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#B4B5B7">
-            <ListView x:Name="MeasurementsList"
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <!--Header BackGround-->
+                <Image Source="pastmeasurementspage.png " Aspect="AspectFill" />
+
+                <!--Second Row-->
+                <BoxView BackgroundColor="Yellow" Grid.Row="1" HeightRequest="60" />
+                <Label Text="Past recorded measurements" 
+                       Grid.Row="1"
+                       HorizontalOptions="Center"
+                       TranslationY="30"
+                       FontSize="Large" 
+                       TextColor="Black" 
+                       FontAttributes="Bold" />
+
+                <!--Third Row-->
+                <ListView x:Name="MeasurementsList"
                       SeparatorColor="#05161F"
                       HasUnevenRows="True"
-                      CachingStrategy="RecycleElement">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Frame HasShadow="True" Margin="10">
-                                <StackLayout>
-                                    <Grid VerticalOptions="FillAndExpand">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
-                                            <RowDefinition Height="Auto" />
-                                            <RowDefinition Height="Auto" />
-                                            <RowDefinition Height="Auto" />
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                        </Grid.ColumnDefinitions>
-                                        <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding CurrentDate, StringFormat='Recorded On: {0:MMMM dd, yyyy}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.Column="3" Text="{Binding CurrentWeigh, StringFormat='Weight: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="0" Text="{Binding Chest, StringFormat='Chest: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="1" Text="{Binding Waist, StringFormat='Waist: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="2" Text="{Binding Hip, StringFormat='Hip: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="0" Text="{Binding LeftArm, StringFormat='Left Arm: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="1" Text="{Binding RightArm, StringFormat='Right Arm: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="0" Text="{Binding LeftThigh, StringFormat='Left Thigh: {0}'}" />
-                                        <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="1" Text="{Binding RightThigh, StringFormat='Right Thigh: {0}'}" />
-                                    </Grid>
-                                </StackLayout>
-                            </Frame>
-                            <ViewCell.ContextActions>
-                                <MenuItem
+                      Grid.Row="2"
+                      CachingStrategy="RecycleElement"
+                      ItemTapped="MeasurementsList_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame HasShadow="True" Margin="10">
+                                    <StackLayout>
+                                        <Grid VerticalOptions="FillAndExpand">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding CurrentDate, StringFormat='Recorded On: {0:MMMM dd, yyyy}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.Column="3" Text="{Binding CurrentWeigh, StringFormat='Weight: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="0" Text="{Binding Chest, StringFormat='Chest: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="1" Text="{Binding Waist, StringFormat='Waist: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="2" Text="{Binding Hip, StringFormat='Hip: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="0" Text="{Binding LeftArm, StringFormat='Left Arm: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="1" Text="{Binding RightArm, StringFormat='Right Arm: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="0" Text="{Binding LeftThigh, StringFormat='Left Thigh: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="1" Text="{Binding RightThigh, StringFormat='Right Thigh: {0}'}" />
+                                        </Grid>
+                                    </StackLayout>
+                                </Frame>
+                                <ViewCell.ContextActions>
+                                    <MenuItem
                                     Text="Delete"
                                     IsDestructive="True"
                                     Clicked="Delete_Clicked"
                                     CommandParameter="{Binding .}" />
-                            </ViewCell.ContextActions>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-
+                                </ViewCell.ContextActions>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Image Source="measuringicon1.png" HorizontalOptions="Center"
+                       VerticalOptions="End" WidthRequest="100" HeightRequest="100"
+                       TranslationY="30" />
+            </Grid>            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,30 +6,49 @@
              mc:Ignorable="d"
              x:Class="MyWorkOuts.Views.About">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="FillAndExpand">
-            <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
-                <Label Text="My WorkOut App" HorizontalOptions="Center" FontSize="Large" TextColor="Black"/>
-            </StackLayout>
-            <StackLayout HorizontalOptions="Center">
-                <Image Source="icon.png"/>
-            </StackLayout>
-            <StackLayout>
-                <Label Text="Created by Maverick " HorizontalOptions="Center" FontSize="Large"/>
-                <Label Text="www.sfosquad.com" HorizontalOptions="Center" TextDecorations="Underline">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="GoSFO_Tapped" />
-                    </Label.GestureRecognizers>
-                </Label>
-            </StackLayout>
-            
-            <StackLayout VerticalOptions="EndAndExpand" Margin="10">
-                <Label Text="Icons provided by DinosoftLabs" HorizontalOptions="Center" FontSize="Medium">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="dinosoftlabs_Tapped" />
-                    </Label.GestureRecognizers>
-                </Label>
-            </StackLayout>
-        </StackLayout>
-            
+        <ScrollView>
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <!--Header-->
+                <Image Source="aboutpage.png" Aspect="AspectFill" />
+
+                <!--Title-->
+                <StackLayout BackgroundColor="Yellow" Grid.Row="1">
+                    <Label Text="My Workout App" Grid.Row="1"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"
+                       Margin="0,30,0,0"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       TextColor="Black" />
+                </StackLayout>
+
+                <!--About Text-->
+                <Label Grid.Row="2"
+                       Margin="15"
+                       Text="This App has pre-built programs from various workout programs. This App was created for user that want to have a their workout program calendar on their phone and not have to pull out the calendars that come with their workout program." 
+                       TextColor="Black"
+                       FontSize="Body"
+                       HorizontalOptions="CenterAndExpand"/>
+
+                <!--Page end-->
+                <Label Grid.Row="3" VerticalOptions="End"
+                       Margin="10"
+                       FontSize="Subtitle"
+                       Text="Images where created by Maverick24 and some where downloaded from unsplash.com. Please check them out. If you would like a workout program added please contact me through Google play." />
+                <!--Icon Image-->
+                <Image Source="icon.png" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="End"
+                       WidthRequest="100" 
+                       HeightRequest="100" 
+                       TranslationY="30"/>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

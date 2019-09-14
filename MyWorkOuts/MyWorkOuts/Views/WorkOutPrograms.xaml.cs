@@ -26,10 +26,9 @@ namespace MyWorkOuts.Views
                 new ProgramList { ProgramTitle = "Max 30", DaysToWorkOut = "56 Day's", ImageUrl = "max30.png" }
             };
         }
-
         private void WorkoutProgramsList_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            MyProgramsList.SelectedItem = null;
         }
     }
 }

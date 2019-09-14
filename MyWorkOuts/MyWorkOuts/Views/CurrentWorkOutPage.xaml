@@ -15,52 +15,6 @@
                 <Label x:Name="WorkOutTitle" FontSize="Large" TextColor="Black" HorizontalOptions="Center" Margin="0,0,0,-25"/>
                 <Label x:Name="WorkoutDays" FontSize="Medium" TextColor="Black" HorizontalOptions="Center" />
             </StackLayout>
-
-            <!--<ListView x:Name="MyWorkOutList"
-                      SeparatorColor="#05161F"
-                      HasUnevenRows="True"
-                      ItemTapped="MyWorkOutList_ItemTapped"
-                      CachingStrategy="RecycleElement">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Frame HasShadow="True" Margin="10,10,10,10">
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                                    <Grid Padding="10">
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
-                                            <RowDefinition Height="Auto" />
-                                        </Grid.RowDefinitions>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
-                                        </Grid.ColumnDefinitions>
-                                        <StackLayout HorizontalOptions="StartAndExpand">
-                                            <Label Grid.Row="0"
-                                               Grid.Column="0"
-                                               TextColor="#060C0D"
-                                               Text="{Binding WorkOutTitle}" />
-                                            <Label Grid.Row="1"
-                                               Grid.Column="0"
-                                               TextColor="#C3171C"
-                                               Text="{Binding Date, StringFormat='{}{0:MMMM dd, yyyy}'}" />
-                                        </StackLayout>
-                                        
-                                        <Image Grid.RowSpan="2"
-                                               Grid.Column="1"
-                                               HorizontalOptions="End"
-                                               Source="checkmark.png"
-                                               IsVisible="{Binding Done}" />
-                                    </Grid>
-                                </StackLayout>
-                            </Frame>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>-->
-
-
-
             <ListView x:Name="MyWorkOutList"
                       SeparatorColor="#05161F"
                       HasUnevenRows="True"
