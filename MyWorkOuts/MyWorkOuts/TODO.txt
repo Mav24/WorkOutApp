@@ -12,3 +12,8 @@ Sept 12 2019
 - Look in to new style for past records page
 - Fix only allow 3 numbers in measurement page
 
+Sept 15 2019
+- fixed measurement page to allow 4 numbers entry
+- Created new images
+- Uploaded apk to google
+

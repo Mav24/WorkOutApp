@@ -42,7 +42,7 @@
                        FontSize="Subtitle"
                        Text="Images were created by Maverick24 and some were downloaded from unsplash.com. Please check them out. If you would like a workout program added, please contact me through Google Play." />
                 <!--Icon Image-->
-                <Image Source="icon.png" 
+                <Image Source="iconimage1.png" 
                        HorizontalOptions="Center"
                        VerticalOptions="End"
                        WidthRequest="100" 

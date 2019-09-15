@@ -62,7 +62,7 @@
                     
                 </StackLayout>
                 
-                <Image Source="icon.png" HorizontalOptions="Center" VerticalOptions="End"
+                <Image Source="iconimage.png" HorizontalOptions="Center" VerticalOptions="End"
                        WidthRequest="100" HeightRequest="100" TranslationY="45" />
                 
             </Grid>

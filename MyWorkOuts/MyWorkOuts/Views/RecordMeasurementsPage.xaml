@@ -45,54 +45,54 @@
                     <Entry x:Name="ChestEntry"
                            Placeholder="Chest"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
                 <StackLayout Grid.Column="1">
                     <Entry x:Name="CurrentWeigh"
                        Placeholder="Weight"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.Column="0">
                     <Entry x:Name="LeftArm"
                        HorizontalOptions="FillAndExpand"
                        Placeholder="Left Arm"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
                 <StackLayout Grid.Row="1" Grid.Column="1">
                     <Entry x:Name="RightArm"
                        HorizontalOptions="FillAndExpand"
                        Placeholder="Right Arm"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
                 <StackLayout Grid.Row="2" Grid.Column="0">
                     <Entry x:Name="Waist"
                    Placeholder="Waist"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" Grid.Column="1">
                     <Entry x:Name="Hip"
                    Placeholder="Hip"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="3" Grid.Column="0">
                     <Entry x:Name="LeftThigh"
                    Placeholder="Left Thigh"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="3" Grid.Column="1">
                     <Entry x:Name="RightThigh"
                    Placeholder="Right Thigh"
                        Keyboard="Numeric"
-                       MaxLength="3" />
+                       MaxLength="4" />
                 </StackLayout>
 
             </Grid>
