@@ -31,7 +31,7 @@
                 <!--About Text-->
                 <Label Grid.Row="2"
                        Margin="15"
-                       Text="This App has pre-built programs from various workout programs. This App was created for user that want to have a their workout program calendar on their phone and not have to pull out the calendars that come with their workout program." 
+                       Text="This App has pre-built calendars from various workout programs. This App was created for users that want to have their workout program calendar on their phone." 
                        TextColor="Black"
                        FontSize="Body"
                        HorizontalOptions="CenterAndExpand"/>
@@ -40,7 +40,7 @@
                 <Label Grid.Row="3" VerticalOptions="End"
                        Margin="10"
                        FontSize="Subtitle"
-                       Text="Images where created by Maverick24 and some where downloaded from unsplash.com. Please check them out. If you would like a workout program added please contact me through Google play." />
+                       Text="Images were created by Maverick24 and some were downloaded from unsplash.com. Please check them out. If you would like a workout program added, please contact me through Google Play." />
                 <!--Icon Image-->
                 <Image Source="icon.png" 
                        HorizontalOptions="Center"
