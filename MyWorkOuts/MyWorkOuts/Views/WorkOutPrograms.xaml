@@ -10,6 +10,7 @@
         <StackLayout BackgroundColor="#B4B5B7">
             <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
                 <Label Text="Workout Programs" FontSize="Large" HorizontalOptions="Center" TextColor="Black" />
+                <BoxView BackgroundColor="Blue" HeightRequest="4"/>
             </StackLayout>
             <ListView x:Name="MyProgramsList"
                       SeparatorColor="#05161F"

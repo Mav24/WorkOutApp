@@ -5,7 +5,6 @@ using System.Collections.ObjectModel;
 using MyWorkOuts.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -93,14 +92,9 @@ namespace MyWorkOuts.Views
                 }
 
                 await DisplayAlert("Calendar Created", $"{selectedProgram} WorkOut Calendar has been created.", "Great!");
-                //await Shell.Current.GoToAsync("//CurrentWorkOut");
-                
-                
-
             }
             catch (Exception)
             {
-
                 await DisplayAlert("Error", "Something went wrong! please try again", "OK");
             }
         }

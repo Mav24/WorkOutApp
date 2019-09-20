@@ -26,7 +26,9 @@
                        FontSize="Large"
                        FontAttributes="Bold"
                        TextColor="Black" />
+                    <BoxView BackgroundColor="Blue" Grid.Row="2" HeightRequest="4"/>
                 </StackLayout>
+                
 
                 <!--About Text-->
                 <Label Grid.Row="2"
