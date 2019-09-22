@@ -39,16 +39,24 @@ namespace MyWorkOuts.Views
             }
             else
             {
-                WorkOutTitle.Text = "Click the create workout button to start a workout program!";
+                WorkOutTitle.Text = "Click the CREATE WORKOUT button to start a workout program!";
                 WorkoutDays.Text = "";
             }
             
         }
         async void Create_WorkOut_Clicked(object sender, EventArgs e)
         {
-            if (await DisplayAlert("Warning!!", "Are you sure you want to create a new workout calendar? Current calendar will be deleted.", "Yes", "No"))
+            var workOutCount = _workOuts.Count;
+            if (workOutCount > 0)
             {
-                await _connection.DropTableAsync<WorkOutModel>();
+                if (await DisplayAlert("Warning!!", $"Are you sure you want to create a new workout calendar? Current calendar {WorkOutTitle.Text} will be deleted.", "Yes", "No"))
+                {
+                    await _connection.DropTableAsync<WorkOutModel>();
+                    await Shell.Current.Navigation.PushModalAsync(new CreateWorkOutCalendar());
+                }
+            }
+            else
+            {
                 await Shell.Current.Navigation.PushModalAsync(new CreateWorkOutCalendar());
             }
         }

@@ -22,5 +22,9 @@ Sept 16 2019
 
 Sept 19 2019
 - UI updates..
-- testing release
+- OK update I was able to get the app to install with developers when the app was set to Release mode and with Code shrinker on
+and Linking Sdk and User Assemblies selected.
+
+Sept 22 2019
+- Added in option to select workout from workout program page.
 

@@ -26,6 +26,15 @@ namespace MyWorkOuts.Views
             InitializeComponent();
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
         }
+        public CreateWorkOutCalendar(string programTitle)
+        {
+            InitializeComponent();
+            
+            selectedProgram = programTitle;
+            Program.SelectedItem = programTitle;
+            _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
+            _connection.DropTableAsync<WorkOutModel>();
+        }
 
         protected override async void OnAppearing()
         {
