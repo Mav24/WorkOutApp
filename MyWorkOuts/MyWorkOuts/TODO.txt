@@ -27,4 +27,5 @@ and Linking Sdk and User Assemblies selected.
 
 Sept 22 2019
 - Added in option to select workout from workout program page.
+- Released to store and updated master branch
 
