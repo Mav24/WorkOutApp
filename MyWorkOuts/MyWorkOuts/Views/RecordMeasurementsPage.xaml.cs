@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MarcTron.Plugin;
 using SQLite;
 using System.Collections.ObjectModel;
@@ -22,7 +18,6 @@ namespace MyWorkOuts.Views
             InitializeComponent();
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
         }
-
         protected override async void OnAppearing()
         {
             await _connection.CreateTableAsync<Measurements>();
@@ -81,11 +76,6 @@ namespace MyWorkOuts.Views
             {
                 await DisplayAlert("Error!", "Something went wrong!", "Ok");
             }
-        }
-
-        private void Exit_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

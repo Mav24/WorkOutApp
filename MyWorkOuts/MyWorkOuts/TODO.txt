@@ -1,0 +1,30 @@
+﻿This is a list of things i want to do and are in the process of doing.
+
+- Sept 6th 2019 
+Need to work on About page.. 
+I like to make it so if you click create new workout and you cancel it the workout program you had will be put back..
+
+Sept 11 2019
+- Working on my own images.. 
+
+Sept 12 2019
+- Created new images, Still need new image for main Icon.
+- Look in to new style for past records page
+- Fix only allow 3 numbers in measurement page
+
+Sept 15 2019
+- fixed measurement page to allow 4 numbers entry
+- Created new images
+- Uploaded apk to google
+
+Sept 16 2019
+- I have removed some of the using statements, looks like it shrinked the app down to just over 30.0mb
+
+Sept 19 2019
+- UI updates..
+- OK update I was able to get the app to install with developers when the app was set to Release mode and with Code shrinker on
+and Linking Sdk and User Assemblies selected.
+
+Sept 22 2019
+- Added in option to select workout from workout program page.
+

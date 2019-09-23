@@ -1,10 +1,6 @@
 ﻿using System;
 using MarcTron.Plugin;
 using SQLite;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using MyWorkOuts.Models;
 using Xamarin.Forms;
@@ -23,7 +19,6 @@ namespace MyWorkOuts.Views
             InitializeComponent();
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
         }
-
         protected override async void OnAppearing()
         {
             await _connection.CreateTableAsync<Measurements>();
@@ -40,6 +35,12 @@ namespace MyWorkOuts.Views
                 await _connection.DeleteAsync(delRecord);
                 _measurements.Remove(delRecord);
             }
+        }
+
+        private void MeasurementsList_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            MeasurementsList.SelectedItem = null;
+
         }
     }
 }

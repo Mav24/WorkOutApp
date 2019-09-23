@@ -4,10 +4,7 @@ using SQLite;
 using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using MyWorkOuts.Models;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms.Xaml;
 
 namespace MyWorkOuts.Views
@@ -17,6 +14,7 @@ namespace MyWorkOuts.Views
     {
         private SQLiteAsyncConnection _connection;
         private ObservableCollection<WorkOutModel> _workOuts;
+        
         public CurrentWorkOutPage()
         {
             InitializeComponent();
@@ -29,19 +27,36 @@ namespace MyWorkOuts.Views
             await _connection.CreateTableAsync<WorkOutModel>();
             var workOutsList = await _connection.Table<WorkOutModel>().ToListAsync();
             _workOuts = new ObservableCollection<WorkOutModel>(workOutsList.OrderBy(x => x.Date).ToList());
+            var workOutCount = _workOuts.Count;
+            var completed = _workOuts.Count(x => x.Done);
+            var workOutDaysLeft = workOutCount - completed;
             MyWorkOutList.ItemsSource = _workOuts;
 
-            // Needs work need to get current days work out and count of how many days left
-            //var daysLeft = _workOuts.Count;
-            //Status.Text = $"Current WorkOut Days Left: {daysLeft.ToString()}";
+            if (workOutCount > 0)
+            {
+                WorkOutTitle.Text = _workOuts[0].Title.ToString();
+                WorkoutDays.Text = $"\n{workOutDaysLeft} Days left";
+            }
+            else
+            {
+                WorkOutTitle.Text = "Click the CREATE WORKOUT button to start a workout program!";
+                WorkoutDays.Text = "";
+            }
             
         }
         async void Create_WorkOut_Clicked(object sender, EventArgs e)
         {
-            if (await DisplayAlert("Warning!!", "Are you sure you want to create a new workout calendar? Current calendar will be deleted.", "Yes", "No"))
+            var workOutCount = _workOuts.Count;
+            if (workOutCount > 0)
             {
-
-                await _connection.DropTableAsync<WorkOutModel>();
+                if (await DisplayAlert("Warning!!", $"Are you sure you want to create a new workout calendar? Current calendar {WorkOutTitle.Text} will be deleted.", "Yes", "No"))
+                {
+                    await _connection.DropTableAsync<WorkOutModel>();
+                    await Shell.Current.Navigation.PushModalAsync(new CreateWorkOutCalendar());
+                }
+            }
+            else
+            {
                 await Shell.Current.Navigation.PushModalAsync(new CreateWorkOutCalendar());
             }
         }

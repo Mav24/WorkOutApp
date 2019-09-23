@@ -5,45 +5,69 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="MyWorkOuts.Views.CreateWorkOutCalendar"
-             Title="Create a new WorkOut Calendar">
+             Visual="Material">
 
+    <StackLayout>
+        <ScrollView>
+            <Grid RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="AUTO" />
+                </Grid.RowDefinitions>
+                <!--Header Background-->
+                <Image Source="selectworkoutpage.png" Grid.Row="0" Aspect="AspectFill" />
+                
 
-        <StackLayout BackgroundColor="#B4B5B7">
-            <Frame HasShadow="True" Margin="10,10,10,60">
-                <TableView Intent="Menu">
-                    <TableRoot>
-                        <TableSection Title="Select WorkOut Program" TextColor="#1774A9">
-                            <ViewCell>
-                                <Picker x:Name="Program" Title="Select Program!"
+                <!--Page Name-->
+                <StackLayout Grid.Row="1" BackgroundColor="Yellow"
+                             Padding="0,50,0,0">
+                    <Label Text="Create Workout Calendar" 
+                       Grid.Row="1"
+                       TextColor="Black"
+                       FontSize="Large"
+                       HorizontalOptions="Center" />
+                </StackLayout>
+
+                <!--Page info-->
+                <StackLayout Grid.Row="2" Margin="20">
+                    <Label Text="Select Program!" TextColor="Black" FontSize="Large" />
+                    <Picker x:Name="Program" Title="Select Program!"
                             VerticalOptions="CenterAndExpand"
                             SelectedIndexChanged="Program_SelectedIndexChanged">
-                                    <Picker.Items>
-                                        <x:String>Asylum Vol 1</x:String>
-                                        <x:String>Asylum Vol 2</x:String>
-                                        <x:String>Asylum 1 + 2</x:String>
-                                    </Picker.Items>
-                                </Picker>
-                            </ViewCell>
-                        </TableSection>
-                        <TableSection Title="Select Start Date"  TextColor="#1774A9">
-                            <ViewCell>
-                                <DatePicker x:Name="startDate" Format="D"
+                        <Picker.Items>
+                            <x:String>Asylum Vol 1</x:String>
+                            <x:String>Asylum Vol 2</x:String>
+                            <x:String>Asylum 1 + 2</x:String>
+                            <x:String>Insanity</x:String>
+                            <x:String>Max 30</x:String>
+                            <x:String>10 Minute Trainer</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <StackLayout Margin="0,15,0,0">
+                        <Label Text="Select Start Date" TextColor="Black" FontSize="Large"/>
+                        <DatePicker x:Name="startDate" Format="D" TextColor="Black"
                                 VerticalOptions="CenterAndExpand" />
-                            </ViewCell>
-                        </TableSection>
-                        <TableSection>
-                            <ViewCell>
 
-                                <Button x:Name="Save" Text="Save" 
-                                    Clicked="Save_Clicked"/>
-                            </ViewCell>
-                        </TableSection>
-                    </TableRoot>
-                </TableView>
-            </Frame>
-            
+                    </StackLayout>
+                    <StackLayout Margin="0,15,0,0">
+                        
+                        <Button x:Name="Save" Text="Save"
+                                Clicked="Save_Clicked" />
+                    </StackLayout>
+                    <StackLayout Margin="0,10,0,0">
+                        <Button x:Name="Cancel" Text="Cancel"
+                                Clicked="Cancel_Clicked"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+                
+                <Image Source="iconimage.png" HorizontalOptions="Center" VerticalOptions="End"
+                       WidthRequest="100" HeightRequest="100" TranslationY="45" />
+                
+            </Grid>
+        </ScrollView>
     </StackLayout>
     
-       
     
 </ContentPage>

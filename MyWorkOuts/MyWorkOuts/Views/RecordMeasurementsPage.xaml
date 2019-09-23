@@ -4,39 +4,107 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title="Measurements"
-             x:Class="MyWorkOuts.Views.RecordMeasurementsPage">
+             x:Class="MyWorkOuts.Views.RecordMeasurementsPage"
+             Visual="Material">
+
     <ScrollView>
-        <StackLayout BackgroundColor="#B4B5B7">
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="AUTO" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="AUTO" />
+            </Grid.RowDefinitions>
+            <!--Header Background-->
+            <Image Source="measurementpage.png" Aspect="AspectFill" />
 
-            <TableView Intent="Form" Margin="50">
-                <TableRoot>
-                    <TableSection Title="Measurement Tracker">
-                        <EntryCell x:Name="ChestEntry" Label="Chest: " Keyboard="Numeric" HorizontalTextAlignment="Center" />
-                        <EntryCell x:Name="LeftArm" Label="L.Arm: " Keyboard="Numeric" />
-                        <EntryCell x:Name="RightArm" Label="R.Arm: " Keyboard="Numeric" />
-                        <EntryCell x:Name="Waist" Label="Waist: " Keyboard="Numeric" />
-                        <EntryCell x:Name="Hip" Label="Hip:" Keyboard="Numeric" />
-                        <EntryCell x:Name="LeftThigh" Label="L.Thigh: " Keyboard="Numeric" />
-                        <EntryCell x:Name="RightThigh" Label="R.Thigh: " Keyboard="Numeric" />
-                        <EntryCell x:Name="CurrentWeigh" Label="Weight:" Keyboard="Numeric" />
 
-                    </TableSection>
-                    <TableSection>
-                        <ViewCell>
-                            <Button x:Name="Save"
-                                    Text="Save"
-                                    Clicked="Save_Clicked" />
-                        </ViewCell>
-                        <ViewCell>
-                            <Button x:Name="Exit"
-                                    Text="Cancel"
-                                    Clicked="Exit_Clicked" />
-                        </ViewCell>
-                    </TableSection>
 
-                </TableRoot>
-            </TableView>
-        </StackLayout>
+            <!--Profile Name-->
+            <BoxView BackgroundColor="Yellow" Grid.Row="1" HeightRequest="60" />
+            <StackLayout Grid.Row="1" Padding="0,50,0,0">
+                <Label Text="Record your measurements" FontSize="Large" TextColor="Black"
+                       FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <BoxView BackgroundColor="Blue" Grid.Row="2" HeightRequest="4"/>
+
+            <!--social stats-->
+            <Grid Grid.Row="3" Padding="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0">
+                    <Entry x:Name="ChestEntry"
+                           Placeholder="Chest"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+                <StackLayout Grid.Column="1">
+                    <Entry x:Name="CurrentWeigh"
+                       Placeholder="Weight"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="0">
+                    <Entry x:Name="LeftArm"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="Left Arm"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="1">
+                    <Entry x:Name="RightArm"
+                       HorizontalOptions="FillAndExpand"
+                       Placeholder="Right Arm"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="0">
+                    <Entry x:Name="Waist"
+                   Placeholder="Waist"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Grid.Column="1">
+                    <Entry x:Name="Hip"
+                   Placeholder="Hip"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="0">
+                    <Entry x:Name="LeftThigh"
+                   Placeholder="Left Thigh"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="1">
+                    <Entry x:Name="RightThigh"
+                   Placeholder="Right Thigh"
+                       Keyboard="Numeric"
+                       MaxLength="4" />
+                </StackLayout>
+
+            </Grid>
+
+            <!--Button-->
+            <Button x:Name="Save" 
+                    Grid.Row="4" Margin="20"
+                    Text="Save"
+                    Clicked="Save_Clicked" />
+            <!--Image Icon-->
+            <Image Source="measuringicon1.png" HorizontalOptions="Center" VerticalOptions="End"
+                   WidthRequest="100" HeightRequest="100" TranslationY="50"/>
+        </Grid>
     </ScrollView>
 </ContentPage>

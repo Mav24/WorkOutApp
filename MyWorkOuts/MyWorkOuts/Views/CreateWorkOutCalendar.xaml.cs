@@ -5,7 +5,6 @@ using System.Collections.ObjectModel;
 using MyWorkOuts.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -27,6 +26,15 @@ namespace MyWorkOuts.Views
             InitializeComponent();
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
         }
+        public CreateWorkOutCalendar(string programTitle)
+        {
+            InitializeComponent();
+            
+            selectedProgram = programTitle;
+            Program.SelectedItem = programTitle;
+            _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
+            _connection.DropTableAsync<WorkOutModel>();
+        }
 
         protected override async void OnAppearing()
         {
@@ -34,8 +42,6 @@ namespace MyWorkOuts.Views
             await _connection.CreateTableAsync<WorkOutModel>();
             var workOutsList = await _connection.Table<WorkOutModel>().ToListAsync();
             _workOuts = new ObservableCollection<WorkOutModel>(workOutsList.OrderBy(x => x.Date).ToList());
-            //startDate.Date = DateTime.Now;
-            //Program.SelectedItem = string.Empty;
             
         }
 
@@ -53,6 +59,15 @@ namespace MyWorkOuts.Views
                 case "Asylum 1 + 2":
                     workOutList = BeachBodyWorkOutList.AsylumVol1and2();
                     break;
+                case "Insanity":
+                    workOutList = BeachBodyWorkOutList.Insanity();
+                    break;
+                case "Max 30":
+                    workOutList = BeachBodyWorkOutList.Max30();
+                    break;
+                case "10 Minute Trainer":
+                    workOutList = BeachBodyWorkOutList.TenMinTrainer();
+                    break;
                 default:
                     break;
             }
@@ -63,11 +78,6 @@ namespace MyWorkOuts.Views
 
             await CreateNewCalendar();
             await Shell.Current.Navigation.PopModalAsync();
-            //if (await DisplayAlert("Warning!!", "Are you sure you want to create a new workout calendar? Current calendar will be deleted.", "Yes", "No"))
-            //{
-            //    await _connection.DropTableAsync<WorkOutModel>();
-            //    await CreateNewCalendar();
-            //}
 
         }
 
@@ -91,14 +101,9 @@ namespace MyWorkOuts.Views
                 }
 
                 await DisplayAlert("Calendar Created", $"{selectedProgram} WorkOut Calendar has been created.", "Great!");
-                //await Shell.Current.GoToAsync("//CurrentWorkOut");
-                
-                
-
             }
             catch (Exception)
             {
-
                 await DisplayAlert("Error", "Something went wrong! please try again", "OK");
             }
         }

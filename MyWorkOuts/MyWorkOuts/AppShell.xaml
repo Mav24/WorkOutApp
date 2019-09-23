@@ -8,27 +8,6 @@
        Title="MyWorkOuts"
        x:Class="MyWorkOuts.AppShell">
 
-    <!-- 
-        Styles and Resources 
-    -->
-    <!--<Shell.Resources>
-        <ResourceDictionary>
-            <Color x:Key="NavigationPrimary">#2196F3</Color>
-            <Style x:Key="BaseStyle" TargetType="Element">
-                <Setter Property="Shell.BackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.ForegroundColor" Value="White" />
-                <Setter Property="Shell.TitleColor" Value="White" />
-                <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
-                <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
-                <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
-                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
-            </Style>
-            <Style TargetType="ShellItem" BasedOn="{StaticResource BaseStyle}" />
-        </ResourceDictionary>
-    </Shell.Resources>-->
-
     <!-- Your Pages -->
     <Shell.FlyoutHeader>
         <Grid HeightRequest="300">
@@ -40,28 +19,23 @@
                    TextColor="White"
                    FontSize="Large"
                HorizontalOptions="Center"
-               VerticalOptions="Center"
+               VerticalOptions="End"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center" />
         </Grid>
         
     </Shell.FlyoutHeader>
     <!--First-->
-    <FlyoutItem FlyoutIcon="house.png"
-                Title="Home">
+    <FlyoutItem FlyoutIcon="clipboard1.png"
+                Title="Current Program">
         <Tab Route="CurrentWorkOut"
              Title="Current WorkOut">
             <ShellContent ContentTemplate="{DataTemplate local:CurrentWorkOutPage}" />
         </Tab>
     </FlyoutItem>
-    <!--<FlyoutItem IsEnabled="False" Title="Create WorkOut Calendar" FlyoutDisplayOptions="AsSingleItem">
-        <ShellContent Route="CreateWorkOutCalendar"
-                      Title="Create WorkOut Calendar"
-                      ContentTemplate="{DataTemplate local:CreateWorkOutCalendar}" />
-    </FlyoutItem>-->
     <!--Second-->
     <FlyoutItem Title="Measurements"
-                FlyoutIcon="clipboard.png">
+                FlyoutIcon="measurements96.png">
         <Tab Route="Record"
              Title="Add Record"
              Icon="clipboard.png">
@@ -75,8 +49,20 @@
         </Tab>
     </FlyoutItem>
     <!--Third-->
-    <!--<FlyoutItem Title="About"
+    <FlyoutItem Title="WorkOut Programs"
+                FlyoutIcon="workoutprograms.png">
+        <Tab Route="Programs"
+             Title="Asylum Vol 1">
+            <ShellContent ContentTemplate="{DataTemplate local:WorkOutPrograms}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="About"
                 FlyoutIcon="info.png">
-    </FlyoutItem>-->
+        <Tab Route="About"
+             Title="About">
+            <ShellContent ContentTemplate="{DataTemplate local:About}" />
+        </Tab>
+        
+    </FlyoutItem>
 
 </Shell>
