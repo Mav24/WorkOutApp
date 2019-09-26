@@ -351,7 +351,135 @@ namespace MyWorkOuts.Data
                 "Max Out Strength",
                 "Fight: Round 2",
                 "Rest\nPulse(Optional)",
+                "Rest"
+            };
+            return workOutList;
+        }
+
+        public static List<string> T25AlphaBeta()
+        {
+            workOutList = new List<string>()
+            {
+                // Week One
+                "Stretch",
+                "Cardio",
+                "Speed 1.0",
+                "Total Body Circuit",
+                "AB Intervals",
+                "Cardio & Lower Focus",
                 "Rest",
+                // Week Two
+                "Stretch",
+                "Cardio",
+                "Total Body Circuit",
+                "Speed 1.0",
+                "Cardio",
+                "Lower Focus &\nAb Intervals",
+                "Rest",
+                // Week Three
+                "Stretch",
+                "Total Body Circuit",
+                "Speed 1.0",
+                "Lower Focus",
+                "Cardio",
+                "Total Body Circuit &\nAb Intervals",
+                "Rest",
+                // Week Four
+                "Stretch",
+                "Cardio",
+                "Total Body Circuit",
+                "Lower Focus",
+                "Total Body Circuit",
+                "Ab Intervals &\nSpeed 1.0",
+                "Rest",
+                // Week Five
+                "Stretch",
+                "Total Body Circuit",
+                "Ab Intervals",
+                "Total Body Circuit",
+                "Cardio",
+                "Total Body Circuit &\nLower Focus",
+                "Rest",
+                // Month 2
+                // Week Six
+                "Stretch",
+                "Core Cardio",
+                "Speed 2.0",
+                "Ript Circuit",
+                "Dynamic Core",
+                "Upper Focus &\nCore Cardio",
+                "Rest",
+                // Week Seven
+                "Stretch",
+                "Dynamic Core",
+                "Core Cardio",
+                "Ript Circuit",
+                "Upper Focus",
+                "Ript Circuit &\nSpeed 2.0",
+                "Rest",
+                // Week Eight
+                "Stretch",
+                "Core Cardio",
+                "Upper Focus",
+                "Speed 2.0",
+                "Ript Circuit",
+                "Dynamic Core &\nSpeed 2.0",
+                "Rest",
+                // Week Nine
+                "Stretch",
+                "Ript Circuit",
+                "Dynamic Core",
+                "Core Cardio",
+                "Dynamic Core",
+                "Speed 2.0 &\nUpper Focus",
+                "Rest",
+                // Week Ten
+                "Stretch",
+                "Ript Circuit",
+                "Core Cardio",
+                "Ript Circuit",
+                "Dynamic Core",
+                "Ript Circuit &\nSpeed 2.0",
+                "Rest"
+            };
+            return workOutList;
+        }
+        public static List<string> T25Gamma()
+        {
+            workOutList = new List<string>()
+            {
+                // Week One
+                "Stretch",
+                "Speed 3.0",
+                "Ript Up",
+                "Extreme Circuit",
+                "The Pyramid",
+                "Speed 3.0",
+                "Rest",
+                // Week Two
+                "Stretch",
+                "Ript Up",
+                "Extreme Circuit",
+                "Speed 3.0",
+                "The Pyramid",
+                "Ript Up",
+                "Rest",
+                // Week Three
+                "Stretch",
+                "The Pyramid",
+                "Speed 3.0",
+                "Ript Up",
+                "Extreme Circuit",
+                "The Pyramid",
+                "Rest",
+                // Week Four
+                "Stretch",
+                "Extreme Circuit",
+                "Ript Up",
+                "Speed 3.0",
+                "The Pyramid",
+                "Extreme Circuit",
+                "Rest"
             };
             return workOutList;
         }

@@ -51,6 +51,8 @@ namespace MyWorkOuts.Views
                 new ProgramList { ProgramTitle = "Asylum Vol 1", DaysToWorkOut = "30 Day's", ImageUrl = "asylumvol1.png" },
                 new ProgramList { ProgramTitle = "Asylum Vol 2", DaysToWorkOut = "28 Day's", ImageUrl = "asylumvol2.png" },
                 new ProgramList { ProgramTitle = "Asylum 1 + 2", DaysToWorkOut = "55 Day's", ImageUrl = "asylumoneandtwo.png" },
+                new ProgramList { ProgramTitle = "T25 Alpha and Beta", DaysToWorkOut = "70 Day's", ImageUrl = "t25alphabeta.png"},
+                new ProgramList { ProgramTitle = "T25 Gamma", DaysToWorkOut = "28 Day's", ImageUrl = "t25gamma.png"},
                 new ProgramList { ProgramTitle = "10 Minute Trainer", DaysToWorkOut = "28 Day's", ImageUrl = "tenminutetrainer1.png" },
                 new ProgramList { ProgramTitle = "Max 30", DaysToWorkOut = "56 Day's", ImageUrl = "max30.png" }
             };

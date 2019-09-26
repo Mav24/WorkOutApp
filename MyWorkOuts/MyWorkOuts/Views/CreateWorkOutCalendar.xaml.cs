@@ -68,6 +68,12 @@ namespace MyWorkOuts.Views
                 case "10 Minute Trainer":
                     workOutList = BeachBodyWorkOutList.TenMinTrainer();
                     break;
+                case "T25 Alpha and Beta":
+                    workOutList = BeachBodyWorkOutList.T25AlphaBeta();
+                    break;
+                case "T25 Gamma":
+                    workOutList = BeachBodyWorkOutList.T25Gamma();
+                    break;
                 default:
                     break;
             }
