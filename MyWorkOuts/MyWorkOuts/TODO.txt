@@ -27,4 +27,10 @@ and Linking Sdk and User Assemblies selected.
 
 Sept 22 2019
 - Added in option to select workout from workout program page.
+- Released to store and updated master branch
+- Updated nuget packages
+- Sent release as debug.. seem to work... keep eye on this issue where you select release mode and it wont work.. apk size is very small...
+
+Sept 25 2019
+- Added in T25 workout calendar
 
