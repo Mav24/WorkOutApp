@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="MyWorkOuts.Views.PastRecordPage">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#B4B5B7">
+        <ScrollView BackgroundColor="#B4B5B7">
             <Grid RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="AUTO" />
@@ -29,6 +29,7 @@
                 <BoxView BackgroundColor="Blue" Grid.Row="2" HeightRequest="4"/>
 
                 <!--Third Row-->
+
                 <ListView x:Name="MeasurementsList"
                       SeparatorColor="#05161F"
                       HasUnevenRows="True"
@@ -42,24 +43,24 @@
                                     <StackLayout>
                                         <Grid VerticalOptions="FillAndExpand">
                                             <Grid.RowDefinitions>
-                                                <RowDefinition Height="Auto" />
-                                                <RowDefinition Height="Auto" />
-                                                <RowDefinition Height="Auto" />
-                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="AUTO" />
+                                                <RowDefinition Height="AUTO" />
+                                                <RowDefinition Height="AUTO" />
                                             </Grid.RowDefinitions>
                                             <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="Auto" />
-                                                <ColumnDefinition Width="Auto" />
-                                                <ColumnDefinition Width="Auto" />
-                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="AUTO" />
+                                                <ColumnDefinition Width="AUTO" />
+                                                <ColumnDefinition Width="AUTO" />
+                                                <ColumnDefinition Width="AUTO" />
                                             </Grid.ColumnDefinitions>
-                                            <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding CurrentDate, StringFormat='Recorded On: {0:MMMM dd, yyyy}'}" />
-                                            <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.Column="3" Text="{Binding CurrentWeigh, StringFormat='Weight: {0}'}" />
-                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="0" Text="{Binding Chest, StringFormat='Chest: {0}'}" />
-                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="1" Text="{Binding Waist, StringFormat='Waist: {0}'}" />
-                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="2" Text="{Binding Hip, StringFormat='Hip: {0}'}" />
-                                            <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="0" Text="{Binding LeftArm, StringFormat='Left Arm: {0}'}" />
-                                            <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="1" Text="{Binding RightArm, StringFormat='Right Arm: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding CurrentDate, StringFormat='Recorded On: {0:MMMM dd, yyyy}'}" FontAttributes="Bold"/>
+                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="0" Text="{Binding CurrentWeigh, StringFormat='Weight: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="1" Text="{Binding Chest, StringFormat='Chest: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="1" Grid.Column="2" Text="{Binding Waist, StringFormat='Waist: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="0" Text="{Binding Hip, StringFormat='Hip: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="1" Text="{Binding LeftArm, StringFormat='Left Arm: {0}'}" />
+                                            <Label LineBreakMode="NoWrap" Grid.Row="2" Grid.Column="2" Text="{Binding RightArm, StringFormat='Right Arm: {0}'}" />
                                             <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="0" Text="{Binding LeftThigh, StringFormat='Left Thigh: {0}'}" />
                                             <Label LineBreakMode="NoWrap" Grid.Row="3" Grid.Column="1" Text="{Binding RightThigh, StringFormat='Right Thigh: {0}'}" />
                                         </Grid>
@@ -79,7 +80,7 @@
                 <Image Source="measuringicon1.png" HorizontalOptions="Center"
                        VerticalOptions="End" WidthRequest="100" HeightRequest="100"
                        TranslationY="40" />
-            </Grid>            
-        </StackLayout>
+            </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

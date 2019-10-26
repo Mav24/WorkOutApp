@@ -36,7 +36,7 @@
                                            FontSize="15"
                                            Text="{Binding Date, StringFormat='{}{0:MMMM dd, yyyy}'}" />
                                     </StackLayout>
-                                    <Image Source="checkmark.png" HorizontalOptions="End" IsVisible="{Binding Done}" />
+                                    <Image Source="checkmark.png"  HorizontalOptions="End" IsVisible="{Binding Done, Mode=TwoWay}" />
                                 </StackLayout>
                             </Frame>
                         </ViewCell>

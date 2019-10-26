@@ -22,5 +22,10 @@ namespace MyWorkOuts.Views
         {
             Device.OpenUri(new Uri("https://www.flaticon.com/authors/dinosoftlabs"));
         }
+
+        private void RateApp_Tapped(object sender, EventArgs e)
+        {
+
+        }
     }
 }

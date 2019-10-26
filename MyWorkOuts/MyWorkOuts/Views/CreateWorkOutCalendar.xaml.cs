@@ -40,8 +40,7 @@ namespace MyWorkOuts.Views
         {
             base.OnAppearing();
             await _connection.CreateTableAsync<WorkOutModel>();
-            var workOutsList = await _connection.Table<WorkOutModel>().ToListAsync();
-            _workOuts = new ObservableCollection<WorkOutModel>(workOutsList.OrderBy(x => x.Date).ToList());
+            _workOuts = new ObservableCollection<WorkOutModel>((await _connection.Table<WorkOutModel>().ToListAsync()).OrderBy(x => x.Date).ToList());
             
         }
 

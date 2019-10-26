@@ -11,6 +11,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="AUTO" />
                     <RowDefinition Height="AUTO" />
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="AUTO" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
@@ -28,7 +29,6 @@
                        TextColor="Black" />
                     <BoxView BackgroundColor="Blue" Grid.Row="2" HeightRequest="4"/>
                 </StackLayout>
-                
 
                 <!--About Text-->
                 <Label Grid.Row="2"
@@ -38,8 +38,20 @@
                        FontSize="Body"
                        HorizontalOptions="CenterAndExpand"/>
 
+                <!--Rate App-->
+                <Label Text="Rate My App HERE" Grid.Row="3"
+                       Margin="0,15,0,0"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="CenterAndExpand">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RateApp_Tapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+                
                 <!--Page end-->
-                <Label Grid.Row="3" VerticalOptions="End"
+                <Label Grid.Row="4" VerticalOptions="End"
                        Margin="10"
                        FontSize="Subtitle"
                        Text="Images were created by Maverick24 and some were downloaded from unsplash.com. Please check them out. If you would like a workout program added, please contact me through Google Play." />

@@ -7,6 +7,14 @@
              x:Class="MyWorkOuts.Views.CreateWorkOutCalendar"
              Visual="Material">
 
+<ContentPage.Resources>
+  <ResourceDictionary>
+    <Style x:Key="Label" TargetType="Label">
+      <Setter Property="TextColor" Value="Black"/>
+      <Setter Property="FontSize" Value="Large"/>
+    </Style>
+  </ResourceDictionary>
+</ContentPage.Resources>
     <StackLayout>
         <ScrollView>
             <Grid RowSpacing="0">
@@ -22,16 +30,12 @@
                 <!--Page Name-->
                 <StackLayout Grid.Row="1" BackgroundColor="Yellow"
                              Padding="0,50,0,0">
-                    <Label Text="Create Workout Calendar" 
-                       Grid.Row="1"
-                       TextColor="Black"
-                       FontSize="Large"
-                       HorizontalOptions="Center" />
+                    <Label Text="Create Workout Calendar" Grid.Row="1" HorizontalOptions="Center" Style="{StaticResource Label}"/>
                 </StackLayout>
 
                 <!--Page info-->
                 <StackLayout Grid.Row="2" Margin="20">
-                    <Label Text="Select Program!" TextColor="Black" FontSize="Large" />
+                    <Label Text="Select Program!" Style="{StaticResource Label}"/>
                     <Picker x:Name="Program" Title="Select Program!"
                             VerticalOptions="CenterAndExpand"
                             SelectedIndexChanged="Program_SelectedIndexChanged">
@@ -47,13 +51,12 @@
                         </Picker.Items>
                     </Picker>
                     <StackLayout Margin="0,15,0,0">
-                        <Label Text="Select Start Date" TextColor="Black" FontSize="Large"/>
+                        <Label Text="Select Start Date" Style="{StaticResource Label}"/>
                         <DatePicker x:Name="startDate" Format="D" TextColor="Black"
                                 VerticalOptions="CenterAndExpand" />
 
                     </StackLayout>
                     <StackLayout Margin="0,15,0,0">
-                        
                         <Button x:Name="Save" Text="Save"
                                 Clicked="Save_Clicked" />
                     </StackLayout>

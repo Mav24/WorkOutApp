@@ -14,7 +14,7 @@ namespace MyWorkOuts.Views
     {
         private SQLiteAsyncConnection _connection;
         private ObservableCollection<WorkOutModel> _workOuts;
-        
+
         public CurrentWorkOutPage()
         {
             InitializeComponent();
@@ -25,25 +25,45 @@ namespace MyWorkOuts.Views
         {
             base.OnAppearing();
             await _connection.CreateTableAsync<WorkOutModel>();
-            var workOutsList = await _connection.Table<WorkOutModel>().ToListAsync();
-            _workOuts = new ObservableCollection<WorkOutModel>(workOutsList.OrderBy(x => x.Date).ToList());
-            var workOutCount = _workOuts.Count;
-            var completed = _workOuts.Count(x => x.Done);
-            var workOutDaysLeft = workOutCount - completed;
-            MyWorkOutList.ItemsSource = _workOuts;
-
-            if (workOutCount > 0)
-            {
-                WorkOutTitle.Text = _workOuts[0].Title.ToString();
-                WorkoutDays.Text = $"\n{workOutDaysLeft} Days left";
-            }
-            else
+            _workOuts = new ObservableCollection<WorkOutModel>((await _connection.Table<WorkOutModel>().ToListAsync()).OrderBy(x => x.Date).ToList());
+            var workOutDaysLeft  = _workOuts.Count - _workOuts.Count(x => x.Done);
+            MyWorkOutList.ItemsSource = _workOuts;           
+            
+            if (_workOuts.Count <= 0)
             {
                 WorkOutTitle.Text = "Click the CREATE WORKOUT button to start a workout program!";
                 WorkoutDays.Text = "";
             }
-            
+            else
+            {
+                if (workOutDaysLeft <= 0)
+                {
+                    WorkOutTitle.Text = _workOuts[0].Title.ToString();
+                    WorkoutDays.Text = "\nCompleted!";
+                }
+                else
+                {
+                    // This needs work.. This scrolls but maybe need to get date
+                    WorkOutTitle.Text = _workOuts[0].Title.ToString();
+                    WorkoutDays.Text = $"\n{workOutDaysLeft} Days left";
+                    //ScrollToCurrentWorkOut(_workOuts.Count);
+
+                }
+
+            }
         }
+
+        private void ScrollToCurrentWorkOut(int workOutCount)
+        {
+            for (int i = 0; i < workOutCount; i++)
+            {
+                if (_workOuts[i].Date == DateTime.Now.Date)
+                {
+                    MyWorkOutList.ScrollTo(_workOuts[i], ScrollToPosition.Start, true);
+                }
+            }
+        }
+
         async void Create_WorkOut_Clicked(object sender, EventArgs e)
         {
             var workOutCount = _workOuts.Count;
@@ -70,6 +90,9 @@ namespace MyWorkOuts.Views
                 workOutTapped.Done = true;
                 await _connection.UpdateAsync(workOutTapped);
                 MyWorkOutList.SelectedItem = null;
+                //var workOutsList = await _connection.Table<WorkOutModel>().ToListAsync();
+                //_workOuts = new ObservableCollection<WorkOutModel>(workOutsList.OrderBy(x => x.Date).ToList());
+                
                 OnAppearing();
             }
             else
