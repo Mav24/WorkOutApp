@@ -41,7 +41,6 @@
     <AndroidEnableSGenConcurrent>false</AndroidEnableSGenConcurrent>
     <AndroidSupportedAbis>
     </AndroidSupportedAbis>
-    <AndroidLinkTool>proguard</AndroidLinkTool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
