@@ -47,3 +47,5 @@ Oct 25 2019
 **Commented out the auto scroll method**
 - Sent to developers branch.
 
+TODO Add link to rate app
+
