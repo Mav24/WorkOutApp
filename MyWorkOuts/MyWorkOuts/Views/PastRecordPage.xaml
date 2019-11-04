@@ -19,14 +19,11 @@
 
                 <!--Second Row-->
                 <BoxView BackgroundColor="Yellow" Grid.Row="1" HeightRequest="60" />
-                <StackLayout Grid.Row="1" Padding="0,50,0,0">
-                    <Label Text="Past recorded measurements"
-                       HorizontalOptions="Center"
-                       FontSize="Large" 
-                       TextColor="Black" 
-                       FontAttributes="Bold" />
+                <StackLayout Grid.Row="1">
+                    <Label Text="Past recorded measurements" Style="{StaticResource Label}" />
+                    <BoxView Grid.Row="2" Style="{StaticResource blueBox}"/>                
                 </StackLayout>
-                <BoxView BackgroundColor="Blue" Grid.Row="2" HeightRequest="4"/>
+                
 
                 <!--Third Row-->
 
@@ -77,9 +74,8 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <Image Source="measuringicon1.png" HorizontalOptions="Center"
-                       VerticalOptions="End" WidthRequest="100" HeightRequest="100"
-                       TranslationY="40" />
+                <Image Source="measuringicon1.png" Style="{StaticResource imageIcon}" 
+                       TranslationY="40"/>
             </Grid>
         </ScrollView>
     </ContentPage.Content>

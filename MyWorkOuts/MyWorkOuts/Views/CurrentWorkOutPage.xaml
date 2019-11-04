@@ -14,7 +14,7 @@
             <StackLayout HorizontalOptions="Fill" BackgroundColor="Yellow">
                 <Label x:Name="WorkOutTitle" FontSize="Large" TextColor="Black" HorizontalOptions="Center" Margin="0,0,0,-25"/>
                 <Label x:Name="WorkoutDays" FontSize="Medium" TextColor="Black" HorizontalOptions="Center" />
-                <BoxView BackgroundColor="Blue" HeightRequest="4"/>
+                <BoxView Style="{StaticResource blueBox}"/>
             </StackLayout>
             
             <ListView x:Name="MyWorkOutList"

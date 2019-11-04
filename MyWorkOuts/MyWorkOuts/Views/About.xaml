@@ -18,16 +18,10 @@
                 <!--Header-->
                 <Image Source="aboutpage.png" Aspect="AspectFill" />
 
-                <!--Title-->
+                <!--Page Name-->
                 <StackLayout BackgroundColor="Yellow" Grid.Row="1">
-                    <Label Text="My Workout App" Grid.Row="1"
-                       VerticalOptions="Center" 
-                       HorizontalOptions="Center"
-                       Margin="0,30,0,0"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       TextColor="Black" />
-                    <BoxView BackgroundColor="Blue" Grid.Row="2" HeightRequest="4"/>
+                    <Label Text="My Workout App" Style="{StaticResource Label}"/>
+                    <BoxView Grid.Row="2" Style="{StaticResource blueBox}"/>
                 </StackLayout>
 
                 <!--About Text-->
@@ -57,11 +51,7 @@
                        Text="Images were created by Maverick24 and some were downloaded from unsplash.com. Please check them out. If you would like a workout program added, please contact me through Google Play." />
                 <!--Icon Image-->
                 <Image Source="iconimage1.png" 
-                       HorizontalOptions="Center"
-                       VerticalOptions="End"
-                       WidthRequest="100" 
-                       HeightRequest="100" 
-                       TranslationY="30"/>
+                       Style="{StaticResource imageIcon}"/>
             </Grid>
         </ScrollView>
     </ContentPage.Content>

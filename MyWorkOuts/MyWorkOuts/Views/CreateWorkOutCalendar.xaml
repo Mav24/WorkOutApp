@@ -7,14 +7,6 @@
              x:Class="MyWorkOuts.Views.CreateWorkOutCalendar"
              Visual="Material">
 
-<ContentPage.Resources>
-  <ResourceDictionary>
-    <Style x:Key="Label" TargetType="Label">
-      <Setter Property="TextColor" Value="Black"/>
-      <Setter Property="FontSize" Value="Large"/>
-    </Style>
-  </ResourceDictionary>
-</ContentPage.Resources>
     <StackLayout>
         <ScrollView>
             <Grid RowSpacing="0">
@@ -30,7 +22,8 @@
                 <!--Page Name-->
                 <StackLayout Grid.Row="1" BackgroundColor="Yellow"
                              Padding="0,50,0,0">
-                    <Label Text="Create Workout Calendar" Grid.Row="1" HorizontalOptions="Center" Style="{StaticResource Label}"/>
+                    <Label Grid.Row="1" Text="Create Workout Calendar" Style="{StaticResource Label}"/>
+                    <BoxView Grid.Row="2" Style="{StaticResource blueBox}"/>
                 </StackLayout>
 
                 <!--Page info-->
@@ -67,8 +60,7 @@
                     
                 </StackLayout>
                 
-                <Image Source="iconimage.png" HorizontalOptions="Center" VerticalOptions="End"
-                       WidthRequest="100" HeightRequest="100" TranslationY="45" />
+                <Image Source="iconimage.png" Style="{StaticResource imageIcon}" TranslationY="45" />
                 
             </Grid>
         </ScrollView>

@@ -6,6 +6,33 @@
              mc:Ignorable="d"
              x:Class="MyWorkOuts.App">
     <Application.Resources>
-        
+        <ResourceDictionary>
+            
+            <!--Globle style for image Icon on pages-->
+            <Style x:Key="imageIcon" TargetType="Image">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+                <Setter Property="WidthRequest" Value="100"/>
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="TranslationY" Value="30"/>
+            </Style>
+
+            <!--Style for blue separator on all pages-->
+            <Style x:Key="blueBox" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="Blue"/>
+                <Setter Property="HeightRequest" Value="4"/>
+            </Style>
+
+            <!--Label style for page name-->
+            <Style x:Key="Label" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="Margin" Value="0,50,0,0"/>
+
+            </Style>
+            
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
