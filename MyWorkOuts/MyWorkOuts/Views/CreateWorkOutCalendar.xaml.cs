@@ -73,6 +73,9 @@ namespace MyWorkOuts.Views
                 case "T25 Gamma":
                     workOutList = BeachBodyWorkOutList.T25Gamma();
                     break;
+                case "TRANSFORM: 20":
+                    workOutList = BeachBodyWorkOutList.TransForm20();
+                    break;
                 default:
                     break;
             }
@@ -82,8 +85,8 @@ namespace MyWorkOuts.Views
         {
 
             await CreateNewCalendar();
-            await Shell.Current.Navigation.PopModalAsync();
-
+            //await Shell.Current.Navigation.PopModalAsync();
+            await Shell.Current.GoToAsync("//CurrentWorkOut");
         }
 
         private async Task CreateNewCalendar()

@@ -41,6 +41,7 @@
                             <x:String>T25 Alpha and Beta</x:String>
                             <x:String>T25 Gamma</x:String>
                             <x:String>10 Minute Trainer</x:String>
+                            <x:String>TRANSFORM: 20</x:String>
                         </Picker.Items>
                     </Picker>
                     <StackLayout Margin="0,15,0,0">
