@@ -483,5 +483,62 @@ namespace MyWorkOuts.Data
             };
             return workOutList;
         }
+        public static List<string> TransForm20()
+        {
+            workOutList = new List<string>()
+            {
+                //Week One
+                "Day 0\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 1 BURN",
+                "Day 2 FASTER",
+                "DAY 3 STRONGER",
+                "DAY 4 POWERFUL",
+                "Day 5 CUT",
+                "Day 6 BALANCED",
+                //Week Two
+                "Day 7\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 8 BURN",
+                "Day 9 FASTER",
+                "DAY 10 STRONGER",
+                "DAY 11 POWERFUL",
+                "Day 12 CUT",
+                "Day 13 BALANCED",
+                //Week Three
+                "Day 14\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 15 BURN",
+                "Day 16 FASTER",
+                "DAY 17 STRONGER",
+                "DAY 18 POWERFUL",
+                "Day 19 CUT",
+                "Day 20 BALANCED",
+                //Week Four
+                "Day 21\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 22 BURN",
+                "Day 23 FASTER",
+                "DAY 24 STRONGER",
+                "DAY 25 POWERFUL",
+                "Day 26 CUT",
+                "Day 27 BALANCED",
+                //Week Five
+                "Day 28\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 29 BURN",
+                "Day 30 FASTER",
+                "DAY 31 STRONGER",
+                "DAY 32 POWERFUL",
+                "Day 33 CUT",
+                "Day 34 BALANCED",
+                //Week Six
+                "Day 35\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 36 BURN",
+                "Day 37 FASTER",
+                "DAY 38 STRONGER",
+                "DAY 39 POWERFUL",
+                "Day 40 CUT SHAUN-A-THON",
+                "Day 41 BALANCED",
+                "Day 42 TAKE WEEK 6 PHOTOS"
+
+            };
+            return workOutList;
+        }
     }
 }

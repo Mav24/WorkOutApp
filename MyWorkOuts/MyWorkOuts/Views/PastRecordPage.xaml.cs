@@ -3,6 +3,7 @@ using MarcTron.Plugin;
 using SQLite;
 using System.Collections.ObjectModel;
 using MyWorkOuts.Models;
+using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,8 +23,9 @@ namespace MyWorkOuts.Views
         protected override async void OnAppearing()
         {
             await _connection.CreateTableAsync<Measurements>();
-            var measurements = await _connection.Table<Measurements>().ToListAsync();
-            _measurements = new ObservableCollection<Measurements>(measurements);
+            _measurements = new ObservableCollection<Measurements>((await _connection.Table<Measurements>().
+                ToListAsync()).OrderBy(x => x.CurrentDate).ToList());
+
             MeasurementsList.ItemsSource = _measurements;
             base.OnAppearing();
         }

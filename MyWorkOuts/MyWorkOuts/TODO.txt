@@ -34,3 +34,18 @@ Sept 22 2019
 Sept 25 2019
 - Added in T25 workout calendar
 
+Sept 27 2019
+- Sent to developers branch and use the linker to shrink size. I pushed it to the master to see if it will work on the store
+
+
+Oct 6 2019
+- Refactored the code on CurrentWorkOutPage
+
+Oct 25 2019
+- Fixed issue with past measurements not scrolling
+- Fixed issue with weight not showing up on some of the entries
+**Commented out the auto scroll method**
+- Sent to developers branch.
+
+TODO Add link to rate app
+

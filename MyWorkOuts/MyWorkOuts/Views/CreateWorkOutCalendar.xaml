@@ -22,16 +22,13 @@
                 <!--Page Name-->
                 <StackLayout Grid.Row="1" BackgroundColor="Yellow"
                              Padding="0,50,0,0">
-                    <Label Text="Create Workout Calendar" 
-                       Grid.Row="1"
-                       TextColor="Black"
-                       FontSize="Large"
-                       HorizontalOptions="Center" />
+                    <Label Grid.Row="1" Text="Create Workout Calendar" Style="{StaticResource Label}"/>
+                    <BoxView Grid.Row="2" Style="{StaticResource blueBox}"/>
                 </StackLayout>
 
                 <!--Page info-->
                 <StackLayout Grid.Row="2" Margin="20">
-                    <Label Text="Select Program!" TextColor="Black" FontSize="Large" />
+                    <Label Text="Select Program!" Style="{StaticResource Label}"/>
                     <Picker x:Name="Program" Title="Select Program!"
                             VerticalOptions="CenterAndExpand"
                             SelectedIndexChanged="Program_SelectedIndexChanged">
@@ -44,16 +41,16 @@
                             <x:String>T25 Alpha and Beta</x:String>
                             <x:String>T25 Gamma</x:String>
                             <x:String>10 Minute Trainer</x:String>
+                            <x:String>TRANSFORM: 20</x:String>
                         </Picker.Items>
                     </Picker>
                     <StackLayout Margin="0,15,0,0">
-                        <Label Text="Select Start Date" TextColor="Black" FontSize="Large"/>
+                        <Label Text="Select Start Date" Style="{StaticResource Label}"/>
                         <DatePicker x:Name="startDate" Format="D" TextColor="Black"
                                 VerticalOptions="CenterAndExpand" />
 
                     </StackLayout>
                     <StackLayout Margin="0,15,0,0">
-                        
                         <Button x:Name="Save" Text="Save"
                                 Clicked="Save_Clicked" />
                     </StackLayout>
@@ -64,8 +61,7 @@
                     
                 </StackLayout>
                 
-                <Image Source="iconimage.png" HorizontalOptions="Center" VerticalOptions="End"
-                       WidthRequest="100" HeightRequest="100" TranslationY="45" />
+                <Image Source="iconimage.png" Style="{StaticResource imageIcon}" TranslationY="45" />
                 
             </Grid>
         </ScrollView>

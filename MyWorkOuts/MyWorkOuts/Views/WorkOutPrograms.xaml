@@ -23,7 +23,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <Frame HasShadow="True" Margin="10">
-                                <StackLayout Orientation="Horizontal" HeightRequest="50">
+                                <StackLayout Orientation="Horizontal" HeightRequest="60">
                                     <Image Source="{Binding ImageUrl}" WidthRequest="75" Aspect="AspectFit" />
                                     <StackLayout HorizontalOptions="StartAndExpand" Margin="20,0,0,0">
                                         <Label TextColor="#060C0D"
