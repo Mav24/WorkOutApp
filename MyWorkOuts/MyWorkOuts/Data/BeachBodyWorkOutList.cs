@@ -496,7 +496,7 @@ namespace MyWorkOuts.Data
                 "Day 5 CUT",
                 "Day 6 BALANCED",
                 //Week Two
-                "Day 7\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 7 Rest\nWatch TransForm Your Life",
                 "Day 8 BURN",
                 "Day 9 FASTER",
                 "DAY 10 STRONGER",
@@ -504,7 +504,7 @@ namespace MyWorkOuts.Data
                 "Day 12 CUT",
                 "Day 13 BALANCED",
                 //Week Three
-                "Day 14\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 14 Rest\nWatch TransForm Your Life",
                 "Day 15 BURN",
                 "Day 16 FASTER",
                 "DAY 17 STRONGER",
@@ -512,7 +512,7 @@ namespace MyWorkOuts.Data
                 "Day 19 CUT",
                 "Day 20 BALANCED",
                 //Week Four
-                "Day 21\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 21 Rest\nWatch TransForm Your Life",
                 "Day 22 BURN",
                 "Day 23 FASTER",
                 "DAY 24 STRONGER",
@@ -520,7 +520,7 @@ namespace MyWorkOuts.Data
                 "Day 26 CUT",
                 "Day 27 BALANCED",
                 //Week Five
-                "Day 28\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 28 Rest\nWatch TransForm Your Life",
                 "Day 29 BURN",
                 "Day 30 FASTER",
                 "DAY 31 STRONGER",
@@ -528,7 +528,7 @@ namespace MyWorkOuts.Data
                 "Day 33 CUT",
                 "Day 34 BALANCED",
                 //Week Six
-                "Day 35\nWatch TransForm Your Life\nAnd Take Day 1 Photos",
+                "Day 35 Rest\nWatch TransForm Your Life",
                 "Day 36 BURN",
                 "Day 37 FASTER",
                 "DAY 38 STRONGER",
@@ -536,6 +536,78 @@ namespace MyWorkOuts.Data
                 "Day 40 CUT SHAUN-A-THON",
                 "Day 41 BALANCED",
                 "Day 42 TAKE WEEK 6 PHOTOS"
+
+            };
+            return workOutList;
+        }
+        public static List<string> Lift4()
+        {
+            workOutList = new List<string>()
+            {
+                //Week One
+                "CHEST/TRICEPS\nLIFT 50/50",
+                "BACK/BICEPS\nCircuit",
+                "RECOVERY",
+                "SHOULDERS\nLift Intervals",
+                "LEGS\nLift 50/50",
+                "RECOVERY",
+                "RECOVERY",
+                //Week Two
+                "CHEST/TRICEPS\nCircuit",
+                "BACK/BICEPS\nLift 50/50",
+                "RECOVERY",
+                "SHOULDERS\nLift Intervals",
+                "LEGS\nHIIT",
+                "RECOVERY",
+                "RECOVERY",
+                //Week Three
+                "CHEST/TRICEPS\nLIFT 50/50",
+                "BACK/BICEPS\nCircuit",
+                "RECOVERY",
+                "SHOULDERS\nLift Intervals",
+                "LEGS\nLift 50/50",
+                "RECOVERY",
+                "RECOVERY",
+                //Week Four
+                "CHEST/TRICEPS\nCircuit",
+                "BACK/BICEPS\nLift 50/50",
+                "RECOVERY",
+                "SHOULDERS\nLift Intervals",
+                "LEGS\nHIIT",
+                "RECOVERY",
+                "RECOVERY",
+                //Week Five
+                "CHEST/TRICEPS\nLIFT 50/50",
+                "BACK/BICEPS\nCircuit",
+                "RECOVERY",
+                "SHOULDERS\nLift Intervals",
+                "LEGS\nLift 50/50",
+                "RECOVERY",
+                "RECOVERY",
+                //Week Six
+                "CHEST/TRICEPS\nCircuit",
+                "BACK/BICEPS\nLift 50/50",
+                "RECOVERY",
+                "SHOULDERS\nLift Intervals",
+                "LEGS\nHIIT",
+                "RECOVERY",
+                "RECOVERY",
+                //Week seven
+                "CHEST/BACK\nCircuit",
+                "LEGS\nLift 50/50",
+                "RECOVERY",
+                "SHOULDERS/ARMS\nCircuit",
+                "FULLY BODY\nHIIT",
+                "RECOVERY",
+                "RECOVERY",
+                //Week Eight
+                "CHEST/BACK\nCircuit",
+                "LEGS\nLift 50/50",
+                "RECOVERY",
+                "SHOULDERS/ARMS\nCircuit",
+                "FULLY BODY\nHIIT",
+                "RECOVERY",
+                "RECOVERY"
 
             };
             return workOutList;

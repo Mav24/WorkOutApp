@@ -49,3 +49,6 @@ Oct 25 2019
 
 TODO Add link to rate app
 
+Aug 3 2020
+- Added Lift4 and Transform 20
+
