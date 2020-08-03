@@ -42,6 +42,7 @@
                             <x:String>T25 Gamma</x:String>
                             <x:String>10 Minute Trainer</x:String>
                             <x:String>TRANSFORM: 20</x:String>
+                            <x:String>Lift4</x:String>
                         </Picker.Items>
                     </Picker>
                     <StackLayout Margin="0,15,0,0">

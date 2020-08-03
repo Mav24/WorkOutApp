@@ -76,6 +76,9 @@ namespace MyWorkOuts.Views
                 case "TRANSFORM: 20":
                     workOutList = BeachBodyWorkOutList.TransForm20();
                     break;
+                case "Lift4":
+                    workOutList = BeachBodyWorkOutList.Lift4();
+                    break;
                 default:
                     break;
             }
