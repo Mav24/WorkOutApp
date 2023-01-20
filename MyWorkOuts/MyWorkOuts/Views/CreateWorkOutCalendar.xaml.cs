@@ -79,6 +79,9 @@ namespace MyWorkOuts.Views
                 case "Lift4":
                     workOutList = BeachBodyWorkOutList.Lift4();
                     break;
+                case "ShiftShop":
+                    workOutList = BeachBodyWorkOutList.ShiftShop();
+                    break;
                 default:
                     break;
             }
