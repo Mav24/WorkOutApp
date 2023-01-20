@@ -612,5 +612,38 @@ namespace MyWorkOuts.Data
             };
             return workOutList;
         }
+
+        public static List<string> ShiftShop()
+        {
+            workOutList = new List<string>()
+            {
+                //Week 1
+                "Speed: 25 min",
+                "STRENGTH: 25 min",
+                "SPEED: 25 min",
+                "STRENGTH: 25 min\nSHIFT CORE",
+                "SPEED: 25 min",
+                "STRENGTH: 25 min\nSHIFT CORE",
+                "REST OR SHIFT MOBILITY",
+                //Week 2
+                "Speed: 35 min",
+                "STRENGTH: 35 min",
+                "SPEED: 35 min",
+                "STRENGTH: 35 min\nSHIFT CORE",
+                "SPEED: 35 min",
+                "STRENGTH: 35 min\nSHIFT CORE",
+                "REST OR SHIFT MOBILITY",
+                //Week 3
+                "Speed: 45 min",
+                "STRENGTH: 45 min",
+                "SPEED: 45 min",
+                "STRENGTH: 45 min\nSHIFT CORE",
+                "SPEED: 45 min",
+                "STRENGTH: 45 min\nSHIFT CORE",
+                "REST OR SHIFT MOBILITY",
+
+            };
+            return workOutList;
+        }
     }
 }
