@@ -29,7 +29,7 @@ namespace MyWorkOuts.Views
         public CreateWorkOutCalendar(string programTitle)
         {
             InitializeComponent();
-            
+
             selectedProgram = programTitle;
             Program.SelectedItem = programTitle;
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");

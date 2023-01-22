@@ -29,7 +29,7 @@
                 <!--Page info-->
                 <StackLayout Grid.Row="2" Margin="20">
                     <Label Text="Select Program!" Style="{StaticResource Label}"/>
-                    <Picker x:Name="Program" Title="Select Program!"
+                    <Picker x:Name="Program" Title="Select Program!" TextColor="White"
                             VerticalOptions="CenterAndExpand"
                             SelectedIndexChanged="Program_SelectedIndexChanged">
                         <Picker.Items>
