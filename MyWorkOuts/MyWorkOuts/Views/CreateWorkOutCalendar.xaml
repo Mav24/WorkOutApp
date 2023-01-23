@@ -29,7 +29,7 @@
                 <!--Page info-->
                 <StackLayout Grid.Row="2" Margin="20">
                     <Label Text="Select Program!" Style="{StaticResource Label}"/>
-                    <Picker x:Name="Program" Title="Select Program!"
+                    <Picker x:Name="Program" Title="Select Program!" TextColor="White"
                             VerticalOptions="CenterAndExpand"
                             SelectedIndexChanged="Program_SelectedIndexChanged">
                         <Picker.Items>
@@ -43,11 +43,12 @@
                             <x:String>10 Minute Trainer</x:String>
                             <x:String>TRANSFORM: 20</x:String>
                             <x:String>Lift4</x:String>
+                            <x:String>Shift Shop</x:String>
                         </Picker.Items>
                     </Picker>
                     <StackLayout Margin="0,15,0,0">
                         <Label Text="Select Start Date" Style="{StaticResource Label}"/>
-                        <DatePicker x:Name="startDate" Format="D" TextColor="Black"
+                        <DatePicker x:Name="startDate" Format="D" TextColor="White"
                                 VerticalOptions="CenterAndExpand" />
 
                     </StackLayout>

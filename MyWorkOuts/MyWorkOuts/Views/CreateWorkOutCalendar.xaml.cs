@@ -29,7 +29,7 @@ namespace MyWorkOuts.Views
         public CreateWorkOutCalendar(string programTitle)
         {
             InitializeComponent();
-            
+
             selectedProgram = programTitle;
             Program.SelectedItem = programTitle;
             _connection = MtSql.Current.GetConnectionAsync("myworkouts.db3");
@@ -79,7 +79,7 @@ namespace MyWorkOuts.Views
                 case "Lift4":
                     workOutList = BeachBodyWorkOutList.Lift4();
                     break;
-                case "ShiftShop":
+                case "Shift Shop":
                     workOutList = BeachBodyWorkOutList.ShiftShop();
                     break;
                 default:

@@ -56,7 +56,8 @@ namespace MyWorkOuts.Views
                 new ProgramList { ProgramTitle = "10 Minute Trainer", DaysToWorkOut = "28 Day's", ImageUrl = "tenminutetrainer1.png" },
                 new ProgramList { ProgramTitle = "Max 30", DaysToWorkOut = "56 Day's", ImageUrl = "max30.png" },
                 new ProgramList { ProgramTitle = "TRANSFORM: 20", DaysToWorkOut = "43 Days", ImageUrl = "transform20.png"},
-                new ProgramList { ProgramTitle = "Lift4", DaysToWorkOut = "56 Days", ImageUrl = "lift4.png"}
+                new ProgramList { ProgramTitle = "Lift4", DaysToWorkOut = "56 Days", ImageUrl = "lift4.png"},
+                new ProgramList { ProgramTitle = "Shift Shop", DaysToWorkOut = "21 Days", ImageUrl = "shiftShop.png"}
             };
         }
 
