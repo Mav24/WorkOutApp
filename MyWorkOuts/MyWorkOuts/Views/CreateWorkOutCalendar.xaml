@@ -48,7 +48,7 @@
                     </Picker>
                     <StackLayout Margin="0,15,0,0">
                         <Label Text="Select Start Date" Style="{StaticResource Label}"/>
-                        <DatePicker x:Name="startDate" Format="D" TextColor="Black"
+                        <DatePicker x:Name="startDate" Format="D" TextColor="White"
                                 VerticalOptions="CenterAndExpand" />
 
                     </StackLayout>
